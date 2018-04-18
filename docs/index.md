@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# About me
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+I am a PhD student at XTBG. [More about me](me.md).
 
-## Commands
+## Site map
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+## links
 
-## Project layout
+* [biopython](notesmd/programing/python.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* django
+
+* markdown
+
+* [biopython](notesmd/programing/python.md)
+
+* django
+
+* markdown
+
+* [biopython](notesmd/programing/python.md)
+
+* django
+
+* markdown
+
+* [biopython](notesmd/programing/python.md)
+
+* django
+
+* markdown

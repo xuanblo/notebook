@@ -1,1 +1,60 @@
-site_name: My Docs
+# Pages
+pages:
+- Home: index.md
+- Notebook:
+  - Programing: 
+    - python: 'notesmd/programing/python.md'
+- Project on Github: project.md
+- Publish: publish.md
+- About me: me.md
+
+
+# Project information
+site_name: Xuan's notebook
+site_description: 'A Personal Noteboos'
+site_author: 'Xuan Zhang'
+site_url: 'https://xuanbo.github.io'
+
+# Repository
+repo_name: "xuanblo/notebook"
+repo_url: "https://github.com/xuanblo/notebook"
+
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 Xuan Zhang'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Green'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/xuanblo'
+    - type: 'twitter'
+      link: 'https://twitter.com/squidfunk'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/squidfunk'
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
