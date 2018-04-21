@@ -3,7 +3,9 @@ pages:
 - Home: index.md
 - Notebook:
   - Programing: 
-    - python: 'notesmd/programing/python.md'
+    - Python: 'notesmd/programing/python.md'
+    - Snakemake: 'notesmd/programing/snakemake.md'
+    - Biopython: 'notesmd/programing/biopython.md'
 - Project on Github: project.md
 - Publish: publish.md
 - About me: me.md
@@ -13,7 +15,7 @@ pages:
 site_name: Xuan's notebook
 site_description: 'A Personal Noteboos'
 site_author: 'Xuan Zhang'
-site_url: 'https://xuanbo.github.io'
+site_url: 'https://xuanblo.github.io'
 
 # Repository
 repo_name: "xuanblo/notebook"
@@ -41,14 +43,12 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/xuanblo'
-    - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
-    - type: 'linkedin'
-      link: 'https://linkedin.com/in/squidfunk'
+    - type: 'ResearchGate'
+      link: 'https://www.researchgate.net/profile/Xuan_Zhang91'
 
 # Google Analytics
 google_analytics:
-  - 'UA-XXXXXXXX-X'
+  - 'UA-117843700-1'
   - 'auto'
 
 # Extensions
@@ -58,3 +58,20 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+

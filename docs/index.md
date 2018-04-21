@@ -6,26 +6,10 @@ I am a PhD student at XTBG. [More about me](me.md).
 
 ## links
 
-* [biopython](notesmd/programing/python.md)
-
-* django
-
-* markdown
+* [biopython](notesmd/programing/biopython.md)
 
 * [biopython](notesmd/programing/python.md)
 
-* django
+* [Snakemake](notesmd/programing/snakemake.md)
 
-* markdown
-
-* [biopython](notesmd/programing/python.md)
-
-* django
-
-* markdown
-
-* [biopython](notesmd/programing/python.md)
-
-* django
-
-* markdown
+* [markdown-material](https://squidfunk.github.io/mkdocs-material/)
