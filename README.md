@@ -29,6 +29,10 @@ See: http://127.0.0.1:8000
 
 1. build a github pages project, [how to](https://pages.github.com/)
 
+```
+git clone https://github.com/xuanblo/xuanblo.github.io.git
+```
+
 2. pull your site
 
 ```shell
@@ -36,6 +40,6 @@ cd  notebook
 mkdocs build
 cd ../
 mv notebook/site ./
-mv site xuanblo.github.io
+cp -r site/* xuanblo.github.io/
 ```
 try pull `site` to your github project
