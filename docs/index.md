@@ -4,12 +4,26 @@ I am a PhD student at XTBG. [More about me](me.md).
 
 ## Site map
 
+    site
+        program
+        lesson
+        bio
+
 ## links
 
-* [biopython](notesmd/programing/biopython.md)
+- [Biopython](notesmd/programing/biopython.md)
 
-* [biopython](notesmd/programing/python.md)
+- [Python](notesmd/programing/python.md)
 
-* [Snakemake](notesmd/programing/snakemake.md)
+- [Snakemake](notesmd/programing/snakemake.md)
 
-* [markdown-material](https://squidfunk.github.io/mkdocs-material/)
+
+- [Linux](notesmd/programing/linux.md)
+
+- [Django](notesmd/programing/django.md)
+
+- [Perl](notesmd/programing/perl.md)
+
+- [Booinformatics](notesmd/programing/bioinformatics.md)
+
+- [MkDocs](notesmd/programing/mkdocs.md)

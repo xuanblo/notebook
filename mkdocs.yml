@@ -6,6 +6,11 @@ pages:
     - Python: 'notesmd/programing/python.md'
     - Snakemake: 'notesmd/programing/snakemake.md'
     - Biopython: 'notesmd/programing/biopython.md'
+    - Linux: 'notesmd/programing/linux.md'
+    - Django: 'notesmd/programing/django.md'
+    - Perl: 'notesmd/programing/perl.md'
+    - Booinformatics: 'notesmd/programing/bioinformatics.md'
+    - MkDocs: 'notesmd/programing/mkdocs.md'
 - Project on Github: project.md
 - Publish: publish.md
 - About me: me.md

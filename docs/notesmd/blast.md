@@ -1,1 +1,0 @@
-# i will show you how to use ncbi blast
