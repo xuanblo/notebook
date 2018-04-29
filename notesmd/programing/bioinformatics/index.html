@@ -1,0 +1,1394 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Personal Noteboos">
+      
+      
+        <link rel="canonical" href="https://xuanblo.github.io/notesmd/programing/bioinformatics/">
+      
+      
+        <meta name="author" content="Xuan Zhang">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Bioinformatics - Xuan's notebook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#bioinformatics" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://xuanblo.github.io" title="Xuan's notebook" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Xuan's notebook
+              </span>
+              <span class="md-header-nav__topic">
+                Bioinformatics
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/xuanblo/notebook/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      xuanblo/notebook
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Xuan's notebook
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/xuanblo/notebook/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      xuanblo/notebook
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Notebook
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Notebook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Programing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Programing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../snakemake/" title="Snakemake" class="md-nav__link">
+      Snakemake
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../biopython/" title="Biopython" class="md-nav__link">
+      Biopython
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../linux/" title="Linux" class="md-nav__link">
+      Linux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../django/" title="Django" class="md-nav__link">
+      Django
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../perl/" title="Perl" class="md-nav__link">
+      Perl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Bioinformatics
+      </label>
+    
+    <a href="./" title="Bioinformatics" class="md-nav__link md-nav__link--active">
+      Bioinformatics
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatician" title="Bioinformatician" class="md-nav__link">
+    Bioinformatician
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics_1" title="Bioinformatics" class="md-nav__link">
+    Bioinformatics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="生物信息杂谈" class="md-nav__link">
+    生物信息杂谈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#talks" title="Talks" class="md-nav__link">
+    Talks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-courses" title="Online courses" class="md-nav__link">
+    Online courses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-packages" title="Comprehensive packages" class="md-nav__link">
+    Comprehensive packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-file-formats" title="General file formats" class="md-nav__link">
+    General file formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bamsamtabixbgzf" title="bam/sam/tabix/bgzf" class="md-nav__link">
+    bam/sam/tabix/bgzf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastaq" title="Fasta/q" class="md-nav__link">
+    Fasta/q
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gffbedvcf" title="GFF/BED/VCF" class="md-nav__link">
+    GFF/BED/VCF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others-formats" title="Others formats" class="md-nav__link">
+    Others formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-api" title="Database API" class="md-nav__link">
+    Database API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structure" title="data structure" class="md-nav__link">
+    data structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" title="Models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts" title="Scripts" class="md-nav__link">
+    Scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" title="Visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circos-related" title="Circos Related" class="md-nav__link">
+    Circos Related
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#others" title="Others" class="md-nav__link">
+    Others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kmer" title="Kmer" class="md-nav__link">
+    Kmer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phylogenetic-tree" title="Phylogenetic tree" class="md-nav__link">
+    Phylogenetic tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomy" title="Taxonomy" class="md-nav__link">
+    Taxonomy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" title="Assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alignment" title="Alignment" class="md-nav__link">
+    Alignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-alignment" title="Multiple Alignment" class="md-nav__link">
+    Multiple Alignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping" title="Mapping" class="md-nav__link">
+    Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bacterial-comparative-genomics" title="Bacterial comparative genomics" class="md-nav__link">
+    Bacterial comparative genomics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metagenomics" title="Metagenomics" class="md-nav__link">
+    Metagenomics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16s" title="16S" class="md-nav__link">
+    16S
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classifier-removing-human-reads" title="Classifier | removing human reads" class="md-nav__link">
+    Classifier | removing human reads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virome" title="Virome" class="md-nav__link">
+    Virome
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chip-seq" title="Chip-seq" class="md-nav__link">
+    Chip-seq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plastform" title="Plastform" class="md-nav__link">
+    Plastform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcr" title="PCR" class="md-nav__link">
+    PCR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hpc" title="HPC" class="md-nav__link">
+    HPC
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../project/" title="Project on Github" class="md-nav__link">
+      Project on Github
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../publish/" title="Publish" class="md-nav__link">
+      Publish
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../me/" title="About me" class="md-nav__link">
+      About me
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatician" title="Bioinformatician" class="md-nav__link">
+    Bioinformatician
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics_1" title="Bioinformatics" class="md-nav__link">
+    Bioinformatics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="生物信息杂谈" class="md-nav__link">
+    生物信息杂谈
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#talks" title="Talks" class="md-nav__link">
+    Talks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online-courses" title="Online courses" class="md-nav__link">
+    Online courses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-packages" title="Comprehensive packages" class="md-nav__link">
+    Comprehensive packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-file-formats" title="General file formats" class="md-nav__link">
+    General file formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bamsamtabixbgzf" title="bam/sam/tabix/bgzf" class="md-nav__link">
+    bam/sam/tabix/bgzf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastaq" title="Fasta/q" class="md-nav__link">
+    Fasta/q
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gffbedvcf" title="GFF/BED/VCF" class="md-nav__link">
+    GFF/BED/VCF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others-formats" title="Others formats" class="md-nav__link">
+    Others formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-api" title="Database API" class="md-nav__link">
+    Database API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structure" title="data structure" class="md-nav__link">
+    data structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" title="Models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts" title="Scripts" class="md-nav__link">
+    Scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" title="Visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circos-related" title="Circos Related" class="md-nav__link">
+    Circos Related
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#others" title="Others" class="md-nav__link">
+    Others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kmer" title="Kmer" class="md-nav__link">
+    Kmer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phylogenetic-tree" title="Phylogenetic tree" class="md-nav__link">
+    Phylogenetic tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomy" title="Taxonomy" class="md-nav__link">
+    Taxonomy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" title="Assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alignment" title="Alignment" class="md-nav__link">
+    Alignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-alignment" title="Multiple Alignment" class="md-nav__link">
+    Multiple Alignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping" title="Mapping" class="md-nav__link">
+    Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bacterial-comparative-genomics" title="Bacterial comparative genomics" class="md-nav__link">
+    Bacterial comparative genomics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metagenomics" title="Metagenomics" class="md-nav__link">
+    Metagenomics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16s" title="16S" class="md-nav__link">
+    16S
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classifier-removing-human-reads" title="Classifier | removing human reads" class="md-nav__link">
+    Classifier | removing human reads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virome" title="Virome" class="md-nav__link">
+    Virome
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chip-seq" title="Chip-seq" class="md-nav__link">
+    Chip-seq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plastform" title="Plastform" class="md-nav__link">
+    Plastform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcr" title="PCR" class="md-nav__link">
+    PCR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hpc" title="HPC" class="md-nav__link">
+    HPC
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/xuanblo/notebook/edit/master/docs/notesmd/programing/bioinformatics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="bioinformatics">Bioinformatics<a class="headerlink" href="#bioinformatics" title="Permanent link">&para;</a></h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#bioinformatician">Bioinformatician</a></li>
+<li><a href="#bioinformatics-1">Bioinformatics</a></li>
+<li><a href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E6%9D%82%E8%B0%88">生物信息杂谈</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#online-courses">Online courses</a></li>
+<li><a href="#comprehensive-packages">Comprehensive packages</a></li>
+<li><a href="#general-file-formats">General file formats</a></li>
+<li><a href="#bamsamtabixbgzf">bam/sam/tabix/bgzf</a></li>
+<li><a href="#fastaq">Fasta/q</a></li>
+<li><a href="#gffbedvcf">GFF/BED/VCF</a></li>
+<li><a href="#others-formats">Others formats</a></li>
+<li><a href="#database-api">Database API</a></li>
+<li><a href="#data-structure">data structure</a></li>
+<li><a href="#models">Models</a></li>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#visualization">Visualization</a><ul>
+<li><a href="#circos-related">Circos Related</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+</li>
+<li><a href="#kmer">Kmer</a></li>
+<li><a href="#phylogenetic-tree">Phylogenetic tree</a></li>
+<li><a href="#taxonomy">Taxonomy</a></li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#alignment">Alignment</a></li>
+<li><a href="#multiple-alignment">Multiple Alignment</a></li>
+<li><a href="#mapping">Mapping</a></li>
+<li><a href="#bacterial-comparative-genomics">Bacterial comparative genomics</a></li>
+<li><a href="#metagenomics">Metagenomics</a></li>
+<li><a href="#16s">16S</a></li>
+<li><a href="#classifier--removing-human-reads">Classifier | removing human reads</a></li>
+<li><a href="#virome">Virome</a></li>
+<li><a href="#chip-seq">Chip-seq</a></li>
+<li><a href="#plastform">Plastform</a></li>
+<li><a href="#pcr">PCR</a></li>
+<li><a href="#hpc">HPC</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="bioinformatician">Bioinformatician<a class="headerlink" href="#bioinformatician" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://blog.fejes.ca/?p=2418">What is a bioinformatician</a></li>
+<li><a href="http://www.bioinformatics.org/franklin/">Benjamin Franklin Award for Open Access in the Life Sciences</a></li>
+<li><a href="http://computationalproteomic.blogspot.co.uk/2014/01/my-formula-as-bioinformatician.html">My Formula as a Bioinformatician</a></li>
+<li><a href="http://www.nature.com/nbt/journal/v31/n11/abs/nbt.2740.html">So you want to be a computational biologist?</a> ☆</li>
+<li><a href="http://biomickwatson.wordpress.com/2013/08/06/bioinformatics-is-not-something-you-are-taught-its-a-way-of-life/">Bioinformatics is not something you are taught, it’s a way of life</a></li>
+<li><a href="http://www.ploscompbiol.org/article/info:doi%2F10.1371%2Fjournal.pcbi.1003496">Bioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies</a></li>
+<li><a href="http://caseybergman.wordpress.com/2012/07/31/top-n-reasons-to-do-a-ph-d-or-post-doc-in-bioinformaticscomputational-biology/">Top N Reasons To Do A Ph.D. or Post-Doc in Bioinformatics/Computational Biology</a></li>
+<li><a href="http://www.acgt.me/?tag=101+questions">101 Questions: a new series of interviews with notable bioinformaticians</a></li>
+<li><a href="http://blog.sciencenet.cn/blog-404304-834869.html">生物信息学家级别</a> <a href="http://www.longwoodgenomics.org/2014/10/11/levels-of-bioinformatics-research/">Levels of Bioinformatics Research</a></li>
+<li><a href="http://toddharris.net/blog/2015/03/23/its-time-to-reboot-bioinformatics-education/">It’s time to reboot bioinformatics education</a></li>
+<li><a href="http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2014_06_13/science.opms.r1400143">An Explosion Of Bioinformatics Careers</a></li>
+<li><a href="https://www.biostars.org/p/228950/#231887"><strong>Is going back to the wet lab worth it?</strong></a></li>
+</ul>
+<p>Social media</p>
+<ul>
+<li><a href="http://www.gettinggeneticsdone.com/2017/02/staying-current-in-bioinformatics-genomics-2017.html">Staying Current in Bioinformatics &amp; Genomics: 2017 Edition</a></li>
+<li><a href="https://www.biostars.org/p/243961/">Interesting bioinformatics blogs (2017 edition)</a></li>
+</ul>
+<p>Programming skills</p>
+<ul>
+<li><a href="http://journals.plos.org/ploscompbiol/article/asset?id=10.1371%2Fjournal.pcbi.1004867.PDF">An Introduction to Programming for Bioscientists: A Python-Based Primer</a></li>
+<li><a href="http://blog.olgabotvinnik.com/blog/2013/11/22/2013-11-22-you-can-code-too/">You can code, too!</a></li>
+</ul>
+<h2 id="bioinformatics_1">Bioinformatics<a class="headerlink" href="#bioinformatics_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://judgestarling.tumblr.com/post/79135526488/the-phylogeny-of-everything-the-origin-of-eukaryotes">The Phylogeny of Everything, the Origin of Eukaryotes, and the Rules of Taxonomy: Death to Archaea, Bacteria, and Eucarya! Long live Archaebacteria, Eubacteria, Eukaryota, and Prokaryota!</a></li>
+<li><a href="http://www.homolog.us/blogs/blog/2014/10/14/crossroads-iii-a-new-direction-for-bioinformatics-with-twelve-fundamental-problems/">Crossroads (iii) – a New Direction for Bioinformatics with Twelve Fundamental Problems</a></li>
+<li><a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003506">Ten Simple Rules for Effective Computational Research</a>（<a href="../../../ten-simple-rules-for-effective-computational-research/">高效计算科学研究的十条简单规则</a>）</li>
+<li><a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">Ten Simple Rules for Reproducible Computational Research</a></li>
+<li><a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003542">Ten Simple Rules for the Care and Feeding of Scientific Data</a></li>
+<li><a href="http://caporasolab.us/An-Introduction-To-Applied-Bioinformatics/">An Introduction To Applied Bioinformatics</a></li>
+<li><a href="http://journal.frontiersin.org/Journal/10.3389/fgene.2014.00259/full">Freedom in bioinformatics</a></li>
+<li><a href="http://garification.blog.163.com/blog/static/1741330252014624114724457/">二代测序数据辨（之一）：Clean Data</a></li>
+<li><a href="http://indexofire.gitbooks.io/notebook_of_analyzing_pathogen_ngs_data/">病原微生物高通量测序数据分析笔记</a></li>
+<li><a href="http://ivory.idyll.org/blog//2015-what-to-do-with-sequencing-data.html">What to do with lots of (sequencing) data</a></li>
+<li><a href="https://liorpachter.wordpress.com/2015/07/10/the-myths-of-bioinformatics-software">The myths of bioinformatics software</a></li>
+<li><a href="https://www.biostars.org/p/190366/"><strong>Good Habit for Bioinformatics Analyst or Scientist</strong></a></li>
+<li><a href="https://www.biostars.org/p/7126/#191667"><strong>What Are The Most Common Stupid Mistakes In Bioinformatics?</strong></a></li>
+</ul>
+<h2 id="_1">生物信息杂谈<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://blog.sciencenet.cn/home.php?mod=space&amp;uid=61772&amp;do=blog&amp;id=590128">《学生物的，不会编程，也可以报考生物信息学的研究生》</a>by <a href="http://blog.sciencenet.cn/home.php?mod=space&amp;uid=61772">牛登科</a>。（学生物的，不会编程，也能学生物信息学技术）</li>
+<li>《<a href="http://blog.sina.com.cn/s/blog_52cb75b90102ekvq.html">高通量测序能替代PCR吗？</a>》 by <a href="http://blog.sina.com.cn/jianhan1">韩建</a></li>
+<li><a href="http://blog.sciencenet.cn/blog-604918-582915.html">《生物信息学数据分析与皇帝的新装》</a></li>
+<li><a href="http://www.biodiscover.com/news/industry/109583.html">个性化医疗会带来更昂贵的药物？</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_52cb75b90102uw21.html">高通量测序公司靠什么赚钱？</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MzA3MjQzODAzNA==&amp;mid=200430076&amp;idx=1&amp;sn=35635d8a4b1c13be069ee557f7466983&amp;scene=2&amp;from=timeline&amp;isappinstalled=0#rd">生物不退学指南：教你如何靠生物养家糊口</a> （想进入生物学领域的请看）</li>
+</ul>
+<h2 id="talks">Talks<a class="headerlink" href="#talks" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://genomespot.blogspot.be/2017/02/how-ngs-is-transforming-medicine.html">How NGS is transforming medicine</a></li>
+</ul>
+<h2 id="online-courses">Online courses<a class="headerlink" href="#online-courses" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://rosalind.info/">Rosalind</a> (Rosalind is a platform for learning bioinformatics through problem solving)</li>
+<li><a href="http://www.langmead-lab.org/teaching-materials/"><strong>Teaching Materials of Langmead-lab</strong></a></li>
+</ul>
+<h2 id="comprehensive-packages">Comprehensive packages<a class="headerlink" href="#comprehensive-packages" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[python] <a href="http://biopython.org/">Biopython</a></li>
+<li>[golang] <a href="https://github.com/biogo">Biogo</a></li>
+<li>[golang] <a href="https://github.com/shenwei356/bio">bio</a> - A simple but high-performance bioinformatics package in Go</li>
+</ul>
+<h2 id="general-file-formats">General file formats<a class="headerlink" href="#general-file-formats" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/mattgodbolt/zindex">zindex</a> - Create an index on a compressed text file</li>
+<li><a href="https://github.com/samtools/tabix">tabix</a>  - table file index</li>
+<li><a href="https://github.com/wormtable/wormtable">wormtable</a> - Write-once-read-many table for large datasets.</li>
+</ul>
+<h2 id="bamsamtabixbgzf">bam/sam/tabix/bgzf<a class="headerlink" href="#bamsamtabixbgzf" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[python] <a href="https://github.com/brentp/hts-python">hts-python</a> - pythonic wrapper for libhts</li>
+<li>[python] <a href="https://github.com/simon-anders/htseq">htseq</a> - HTSeq is a Python library to facilitate processing and analysis of data from high-throughput sequencing (HTS) experiments. <a href="http://www-huber.embl.de/users/anders/HTSeq/">http://www-huber.embl.de/users/anders/HTSeq/</a></li>
+<li>[golang] <a href="https://github.com/biogo/hts">biogo/hts</a></li>
+<li><a href="https://github.com/pezmaster31/bamtools">bamtools</a> - C++ API &amp; command-line toolkit for working with BAM data</li>
+<li><a href="https://github.com/GregoryFaust/samblaster">samblaster</a> -  a tool to mark duplicates and extract discordant and split reads from sam files.</li>
+<li>[python] <a href="https://github.com/alimanfoo/pysamstats">pysamstats</a> - A fast Python and command-line utility for extracting simple statistics against genome positions based on sequence alignments from a SAM or BAM file.</li>
+<li>[python] <a href="https://github.com/pysam-developers/pysam">pysam</a> - a python module for reading and manipulating Samfiles. It's a lightweight wrapper of the samtools C-API. Pysam also includes an interface for tabix. Another sam parser: <a href="https://github.com/mdshw5/simplesam">simplesam</a></li>
+<li><a href="https://github.com/arq5x/grabix">grabix</a> - a wee tool for random access into BGZF files</li>
+<li>[golang]  <a href="https://github.com/brentp/bix">bix</a> - tabix file access with golang using biogo machinery</li>
+<li><a href="https://github.com/DarwinAwardWinner/mergesam">mergesam</a> - Automate common sam &amp; bam conversions</li>
+<li><a href="http://samstat.sourceforge.net/">SAMstat</a> - Displaying sequence statistics for next generation sequencing</li>
+</ul>
+<h2 id="fastaq">Fasta/q<a class="headerlink" href="#fastaq" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/lh3/seqtk">seqtk</a> - Toolkit for processing sequences in FASTA/Q formats</li>
+<li><a href="http://github.com/shenwei356/seqkit">seqkit</a> - A cross-platform and efficient toolkit for FASTA/Q file manipulation <a href="http://bioinf.shenwei.me/seqkit">http://bioinf.shenwei.me/seqkit</a></li>
+<li>[python] <a href="https://github.com/mdshw5/pyfaidx">pyfaidx</a> - pyfaidx: efficient pythonic random access to fasta subsequences</li>
+<li>[golang] <a href="https://github.com/shenwei356/bio">bio</a> - A lightweight and high-performance bioinformatics package in Go</li>
+</ul>
+<p>FASTA index</p>
+<ul>
+<li>[golang] <a href="https://github.com/brentp/faidx">faidx</a></li>
+<li>[golang] <a href="https://github.com/shenwei356/bio/tree/master/seqio/fai">bio/seqio/fai</a></li>
+</ul>
+<h2 id="gffbedvcf">GFF/BED/VCF<a class="headerlink" href="#gffbedvcf" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/arq5x/bedtools2">bedtools2</a> - A powerful toolset for genome arithmetic.</li>
+<li><a href="https://bedops.readthedocs.org/en/latest/index.html">BEDOPS</a> - the fast, highly scalable and easily-parallelizable genome analysis toolkit</li>
+<li>[python] <a href="https://github.com/daler/gffutils">gffutils</a> - GFF and GTF file manipulation and interconversion</li>
+<li>[python] <a href="https://github.com/daler/pybedtools">pybedtools</a> - Python wrapper for Aaron Quinlan's BEDTools</li>
+<li>[golang] <a href="https://github.com/brentp/irelate">irelate</a> - Streaming relation (overlap, distance, KNN) of (any number of) sorted genomic interval sets. #golang</li>
+<li>[golang] <a href="https://github.com/brentp/vcfgo">vcfgo</a> - a golang library to read, write and manipulate files in the variant call format.</li>
+<li><a href="https://github.com/vcflib/vcflib">vcflib</a> - a simple C++ library for parsing and manipulating VCF files, + many command-line utilities </li>
+</ul>
+<h2 id="others-formats">Others formats<a class="headerlink" href="#others-formats" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/jameslz/blast_table2xml">blast_table2xml</a> - Convert blast m6 format to xml for blast2go</li>
+<li><a href="http://seqmagick.readthedocs.org/en/latest/"><em>seqmagick</em></a> - file format conversion in Biopython in a convenient way</li>
+</ul>
+<h2 id="database-api">Database API<a class="headerlink" href="#database-api" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/hammerlab/pyensembl">pyensembl</a> - Python interface to ensembl reference genome metadata (exons, transcripts, etc...)</li>
+</ul>
+<h2 id="data-structure">data structure<a class="headerlink" href="#data-structure" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/olgabot/kvector">kvector</a> - kvector is a small utility for converting motifs to kmer vectors to compare motifs of different lengths</li>
+</ul>
+<h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/jmschrei/pomegranate">pomegranate</a> - Graphical models for Python, implemented in Cython for speed.</li>
+</ul>
+<h2 id="scripts">Scripts<a class="headerlink" href="#scripts" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/stephenturner/oneliners">oneliners</a> - Useful bash one-liners for bioinformatics.</li>
+<li><a href="https://github.com/CGATOxford/cgat">cgat</a> - CGAT - Computational Genomics Analysis Tools</li>
+<li><a href="https://github.com/chapmanb/bcbb">bcbb</a> - Incubator for useful bioinformatics code, primarily in Python and R <a href="http://bcbio.wordpress.com/">http://bcbio.wordpress.com</a></li>
+<li><a href="https://github.com/tanghaibao/jcvi">jcvi</a> - Python utility libraries on genome assembly, annotation and comparative genomics</li>
+<li><a href="https://github.com/peterjc/picobio">picobio</a> - Miscellaneous Bioinformatics scripts etc mostly in Python</li>
+<li><a href="https://github.com/BjornFJohansson/pydna">pydna</a> - Classes and code for representing double stranded DNA and functions for simulating homologous recombination and Gibson assembly.</li>
+<li><a href="https://github.com/likit/BioUtils">BioUtils</a> - Python scripts for miscellaneous bioinformatics stuff.</li>
+<li><a href="https://github.com/sestaton/sesbio">sesbio</a> - Bioinformatics scripts for genome analysis</li>
+<li><a href="https://github.com/ngsutils/ngsutils">ngsutils</a> - Tools for next-generation sequencing analysis <a href="http://ngsutils.org/">http://ngsutils.org</a></li>
+<li><a href="https://github.com/mfumagalli/ngsTools">ngsTools</a> - Programs to analyse NGS data for population genetics purposes</li>
+</ul>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/jonathancrabtree/Circleator">Circleator</a> - Flexible circular visualization of genome-associated data with BioPerl and SVG.</li>
+<li><a href="https://github.com/jokergoo/ComplexHeatmap">ComplexHeatmap</a> - make complex heatmaps as well as self define annotation graphics</li>
+<li><a href="https://github.com/dasmoth/dalliance">dalliance</a> - Interactive web-based genome browser. <a href="http://www.biodalliance.org/">http://www.biodalliance.org/</a></li>
+<li><a href="https://www.biostars.org/p/158039/">Question: Which program, tool, or strategy do you use to visualize genomic rearrangements?</a> </li>
+<li><a href="https://github.com/VoigtLab/dnaplotlib">DNAplotlib</a> - DNA plotting library for Python</li>
+</ul>
+<h3 id="circos-related">Circos Related<a class="headerlink" href="#circos-related" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://circos.ca/">Circos</a>: Perl package for circular plots, which are well suited for genomic rearrangements.</li>
+<li><a href="http://www.australianprostatecentre.org/research/software/jcircos">J-Circos</a> is a java application for doing interactive work with circos plots.</li>
+<li><a href="http://bioinformatics.oxfordjournals.org/content/early/2015/08/18/bioinformatics.btv433.long">ClicO FS</a>: an interactive web-based service of Circos.</li>
+<li><a href="https://cran.r-project.org/web/packages/RCircos/index.html">rCircos</a>: R package for circular plots. [last update: 2013]</li>
+<li><a href="http://www.bioconductor.org/packages/release/bioc/html/OmicCircos.html">OmicCircos</a>: R package for circular plots for omics data.[last update: 2015-04]</li>
+</ul>
+<h3 id="others">Others<a class="headerlink" href="#others" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://bioconductor.org/packages/release/bioc/html/ggbio.html">ggbio</a>: R package for visualizing biological data. Has a circular view similar to the previous packages.</li>
+<li><a href="https://github.com/mbostock/d3/wiki/Chord-Layout">D3 chord diagrams</a> (javascript) can be used to visualize genomic rearrangements. <a href="http://www.global-migration.info/">See this plot of migration flows</a> as a similar example.</li>
+<li><a href="http://www.genomatix.de/online_help/help_eldorado/transcriptome_help.html#gene_fusion_analyses">Genomatix Transcriptome Viewer: Gene Fusion analyses</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/23661695">iFUSE: integrated fusion gene explorer</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/22570408">FusionAnalyser: a new graphical, event-driven tool for fusion rearrangements discovery</a></li>
+<li><a href="http://soap.genomics.org.cn/soapfuse.html#output2">SOAPFuse includes the option to generate figures</a></li>
+<li><a href="http://compbio.cs.brown.edu/projects/gremlin/">Gremlin</a></li>
+<li><a href="http://www.biovis.net/2011/materials/abstracts/BioVispaper107.pdf">Seqeyes</a>: A flash tool for visualizing structural variations.</li>
+<li><a href="http://svviz.github.io/svviz/">SVVIZ</a> - A READ VISUALIZER TO VALIDATE STRUCTURAL VARIANTS</li>
+</ul>
+<h2 id="kmer">Kmer<a class="headerlink" href="#kmer" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/dib-lab/khmer">khmer</a> - In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more <a href="http://khmer.readthedocs.org/">http://khmer.readthedocs.org/</a></li>
+<li><a href="https://github.com/gmarcais/Jellyfish">Jellyfish</a></li>
+</ul>
+<h2 id="phylogenetic-tree">Phylogenetic tree<a class="headerlink" href="#phylogenetic-tree" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[R] <a href="http://www.bioconductor.org/packages/3.1/bioc/vignettes/ggtree/inst/doc/ggtree.html">ggtree</a> - a phylogenetic tree viewer for different types of tree annotations</li>
+<li>[python] <a href="http://etetoolkit.org/">ETE tools</a></li>
+<li><a href="http://evolgenius.info/evolview/">evolview</a></li>
+</ul>
+<h2 id="taxonomy">Taxonomy<a class="headerlink" href="#taxonomy" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/frallain/NCBI_taxonomy_tree">NCBI_taxonomy_tree</a> - NCBI taxonomy tree in-memory mapping</li>
+<li><a href="https://github.com/bendmorris/taxiphy">taxiphy</a> - Common repository for scripts to generate trees from taxonomies. Currently includes ITIS, NCBI, and GBIF.</li>
+<li><a href="https://github.com/shenwei356/gtaxon">gtaxon</a> - A fast cross-platform NCBI taxonomy data querying (gi2taxid, taxid2taxon, name2taxid, LCA) tool, with cmd client and REST API server for both local and remote server. </li>
+<li>[R] <a href="https://github.com/ropensci/taxize">taxize</a> - A taxonomic toolbelt for R <a href="http://ropensci.org/tutorials/taxize.html">http://ropensci.org/tutorials/taxize.html</a></li>
+<li><a href="https://github.com/shenwei356/taxonkit">TaxonKit</a> - Cross-platform and Efficient NCBI Taxonomy Toolkit <a href="http://bioinf.shenwei.me/taxonkit/">http://bioinf.shenwei.me/taxonkit/</a></li>
+</ul>
+<h2 id="assembly">Assembly<a class="headerlink" href="#assembly" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/rrwick/Bandage">Bandage</a> - a Bioinformatics Application for Navigating De novo Assembly Graphs Easily</li>
+<li><a href="http://nucleotid.es">nucleotid.es</a> - an assembler catalogue</li>
+</ul>
+<h2 id="alignment">Alignment<a class="headerlink" href="#alignment" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/opencb/hpg-aligner">hpg-aligner</a> - HPG Aligner is an ultrafast and highly sensitive Next-Generation Sequencing (NGS) mapper which supoprts both DNA and RNA alignment</li>
+<li><a href="https://github.com/AliView/AliView">AliView</a> - Software for aligning viewing and editing dna/aminoacid sequences, intuitive, fast and lightweight. Download and website: <a href="http://www.ormbunkar.se/aliview">http://www.ormbunkar.se/aliview</a></li>
+</ul>
+<h2 id="multiple-alignment">Multiple Alignment<a class="headerlink" href="#multiple-alignment" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://www.bioinf.jku.at/software/msa/">msa: An R Package for Multiple Sequence Alignment</a></li>
+</ul>
+<h2 id="mapping">Mapping<a class="headerlink" href="#mapping" title="Permanent link">&para;</a></h2>
+<h2 id="bacterial-comparative-genomics">Bacterial comparative genomics<a class="headerlink" href="#bacterial-comparative-genomics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://holtlab.net/2015/02/25/tools-for-bacterial-comparative-genomics/">TOOLS FOR BACTERIAL COMPARATIVE GENOMICS</a></li>
+</ul>
+<h2 id="metagenomics">Metagenomics<a class="headerlink" href="#metagenomics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/sharpton/shotmap">shotmap</a> - A Shotgun Metagenome Annotation Pipeline</li>
+<li><a href="https://github.com/HCBravoLab/metagenomeSeq">metagenomeSeq</a> - Statistical analysis for sparse high-throughput sequencing</li>
+<li><a href="https://github.com/MadsAlbertsen/mmgenome">mmgenome</a> - Tools for extracting individual genomes from metagneomes</li>
+<li><a href="https://github.com/marbl/harvest">harvest</a> - suite of core-genome alignment and visualization tools for quickly analyzing thousands of intraspecific microbial genomes.</li>
+<li><a href="https://github.com/gjospin/PhyloSift">PhyloSift</a> - Phylogenetic and taxonomic analysis for genomes and metagenomes</li>
+<li><a href="http://metaquery.docpollard.org/">MetaQuery: Annotation and quantitative analysis of genes in the human gut microbiome</a></li>
+</ul>
+<h2 id="16s">16S<a class="headerlink" href="#16s" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://blog.sciencenet.cn/blog-871198-677805.html">高通量数据处理的一些经验和建议</a></li>
+<li><a href="https://www.researchgate.net/post/How_to_choose_ordination_method_such_as_PCA_CA_PCoA_and_NMDS">How to choose ordination method, such as PCA, CA, PCoA, and NMDS?</a></li>
+</ul>
+<h3 id="classifier-removing-human-reads">Classifier | removing human reads<a class="headerlink" href="#classifier-removing-human-reads" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://taxonomer.iobio.io/info.html">taxonomer.iobio</a> - Taxonomer is a kmer-based ultrafast metagenomics tool for assigning taxonomy to sequencing reads from both clinical and environmental samples.</li>
+<li><a href="ftp://ftp.ncbi.nlm.nih.gov/pub/agarwala/bmtagger/">BMTagger</a> - Best Match Tagger for removing human reads from metagenomics datasets <a href="https://www.researchgate.net/publication/267988741_BMTagger_Best_Match_Tagger_for_removing_human_reads_from_metagenomics_datasets">paper</a>,<a href="http://hmpdacc.org/doc/HumanSequenceRemoval_SOP.pdf">sop</a></li>
+<li><a href="http://ccb.jhu.edu/software/centrifuge">Centrifuge</a> - Classifier for metagenomic sequences</li>
+</ul>
+<h2 id="virome">Virome<a class="headerlink" href="#virome" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/broadinstitute/viral-ngs">viral-ngs</a> - Viral genomics analysis pipelines</li>
+</ul>
+<h2 id="chip-seq">Chip-seq<a class="headerlink" href="#chip-seq" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/crazyhottommy/ChIP-seq-analysis">ChIP-seq-analysis</a></li>
+</ul>
+<h2 id="plastform">Plastform<a class="headerlink" href="#plastform" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.rabix.org/">Rabix</a> - Portable Bioinformatics Pipelines</li>
+<li><a href="https://github.com/bioboxes">bioboxes</a> - Standards for Interchangeable Bioinformatics Containers</li>
+<li><a href="http://merenlab.org/projects/anvio/">Anvi’o</a> is an analysis and visualization platform for ‘omics data. <a href="http://microbe.net/2015/09/04/anvio-a-new-platform-to-work-with-metagenomic-data/?utm_source=twitterfeed&amp;utm_medium=twitter">introduction</a></li>
+</ul>
+<h2 id="pcr">PCR<a class="headerlink" href="#pcr" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/widdowquinn/find_differential_primers">find_differential_primers</a> - Scripts to aid the design of differential primers for diagnostic PCR.</li>
+<li><a href="http://libnano.github.io/primer3-py/">Primer3-py</a> - Primer3-py is a Python-abstracted API for the popular Primer3 library. The intention is to provide a simple and reliable interface for automated oligo analysis and design.</li>
+</ul>
+<h2 id="hpc">HPC<a class="headerlink" href="#hpc" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/drio/hpcgo">hpcgo</a> - Helping submit jobs to HPC cluster.</li>
+<li><a href="https://github.com/shenwei356/easy_qsub">easy_qsub</a>  - Easily submitting PBS jobs with script template. Multiple input files supported.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../perl/" title="Perl" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Perl
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mkdocs/" title="MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                MkDocs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 Xuan Zhang
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/xuanblo" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://www.researchgate.net/profile/Xuan_Zhang91" class="md-footer-social__link fa fa-ResearchGate"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-117843700-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

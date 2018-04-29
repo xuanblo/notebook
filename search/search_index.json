@@ -1,0 +1,674 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "About me\n\u00b6\n\n\nI am a PhD student at XTBG. \nMore about me\n.\n\n\nSite map\n\u00b6\n\n\nsite\n    program\n    lesson\n    bio\n\n\n\n\n\nlinks\n\u00b6\n\n\n\n\n\n\nBiopython\n\n\n\n\n\n\nPython\n\n\n\n\n\n\nSnakemake\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\nDjango\n\n\n\n\n\n\nPerl\n\n\n\n\n\n\nBooinformatics\n\n\n\n\n\n\nMkDocs\n\n\n\n\n\n\nmarkdown",
+            "title": "Home"
+        },
+        {
+            "location": "/#about-me",
+            "text": "I am a PhD student at XTBG.  More about me .",
+            "title": "About me"
+        },
+        {
+            "location": "/#site-map",
+            "text": "site\n    program\n    lesson\n    bio",
+            "title": "Site map"
+        },
+        {
+            "location": "/#links",
+            "text": "Biopython    Python    Snakemake    Linux    Django    Perl    Booinformatics    MkDocs    markdown",
+            "title": "links"
+        },
+        {
+            "location": "/notesmd/programing/python/",
+            "text": "python3\n\u00b6\n\n\n\u6559\u7a0b\n\u00b6\n\n\n\n\npython3 cookbook\n | \n\u672c\u5730\u4e0b\u8f7d\n\n\nrunoob\u83dc\u9e1f\n\n\n\n\n\u8bfb\u53d6\u6587\u4ef6\n\u00b6\n\n\nf\n \n=\n \nopen\n(\n\"read.txt\"\n,\n \n\"r\"\n)\n \n# \u6587\u672c\u6a21\u5f0f\n\n\n\nf\n \n=\n \nopen\n(\n\"read.txt\"\n,\n \n\"r\"\n,\n \nencoding\n \n=\n \n\"utf-8\"\n)\n \n# \u8bfb\u6587\u4ef6\u7684\u65f6\u5019\u6ce8\u610f\u7f16\u7801\u65b9\u5f0f,\n\n\n#python\u9ed8\u8ba4\u662funicode\u7f16\u7801\uff0c\u4f46\u662f\u8bfb\u53d6\u7684\u6587\u4ef6\u5982\u6709\u4e00\u4e9b\u4e2d\u6587\u7a7a\u683c\u3001\u6a2a\u6760\u3001\u5e0c\u814a\u5b57\u6bcd\u7684\n\n\n#\u65f6\u5019\u4f1a\u62a5\u9519\u3002\u5728web\u5f00\u53d1\u4e2d\u7edf\u4e00\u4f7f\u7528utf-8\u7f16\u7801\u65b9\u5f0f\u6700\u597d\uff0c\u56e0\u4e3a\u7edd\u5927\u591a\u6570\u6d4f\u89c8\u5668\u9ed8\u8ba4\u90fd\u662futf-8\u7f16\u7801\n\n\n\nf\n \n=\n \nopen\n(\n\"read.txt\"\n,\n \n\"rb\"\n)\n \n# \u4e8c\u8fdb\u5236\u6a21\u5f0f\n\n\n\nwhole_file\n \n=\n \nf\n.\nread\n()\n \n# \u8bfb\u53d6\u6574\u4e2a\u6587\u4ef6\n\n\n\nfirst_line\n \n=\n \nf\n.\nreadline\n()\n \n# \u8bfb\u53d6\u4e00\u884c\n\n\n\nlines\n \n=\n \nf\n.\nreadlines\n()\n \n# \u8bfb\u53d6\u6587\u4ef6\u5230\u4e00\u4e2a\u5217\u8868\n\n\n\nf\n.\nclose\n()\n \n# \u5173\u95ed\u6587\u4ef6\n\n\n\n\n\n\u5199\u6587\u4ef6\n\u00b6\n\n\nf\n \n=\n \nopen\n(\n\"write\"\n,\n \n\"w\"\n)\n \n# \u6587\u672c\u6a21\u5f0f\n\n\nf\n \n=\n \nopen\n(\n\"write\"\n,\n \n\"wb\"\n)\n \n# \u4e8c\u8fdb\u5236\u6a21\u5f0f\n\n\n\n\n\n\u53bb\u6389\u5b57\u7b26\u4e32\u524d\u540e\u7684\u7a7a\u767d\u5b57\u7b26\n\u00b6\n\n\ntmp_str\n \n=\n \n' a b '\n\n\nstr\n \n=\n \nstr\n.\nstrip\n()\n \n# \u8bfb\u53d6\u6587\u4ef6\u7684\u65f6\u5019\u8fdb\u884c\u6b64\u64cd\u4f5c\uff0c\u597d\u5904\u592a\u591a\u4e86, \u6bd4\u5982\u4e2d\u6587\u7684\u7279\u6b8a\u5b57\u7b26\u5728linux\u6216\u8005\u540e\u7eed\u5904\u7406\u540d\u5b57\u4e0d\u5339\u914d\n\n\n\n\n\n\u5224\u65ad\u5b57\u7b26\u4e32\u7684\u8d77\u59cb\u548c\u7ed3\u5c3e\n\u00b6\n\n\nstr\n.\nstartswith\n(\n'+-'\n)\n \n# \u8d77\u59cb\n\n\nstr\n.\nendswith\n(\n'+-'\n)\n \n# \u7ed3\u5c3e\n\n\n# \u5982\u679c\u4f60\u60f3\u68c0\u67e5\u591a\u79cd\u5339\u914d\u53ef\u80fd\uff0c\u53ea\u9700\u8981\u5c06\u6240\u6709\u7684\u5339\u914d\u9879\u653e\u5165\u5230\u4e00\u4e2a\u5143\u7ec4\u4e2d\u53bb\uff0c \u7136\u540e\u4f20\u7ed9 startswith() \u6216\u8005 endswith() \u65b9\u6cd5\uff1a\n\n\nfor\n \ni\n \nin\n \ncancer_related_lncRNA_df\n.\nindex\n:\n\n    \nfor\n \nhallmark\n \nin\n \ncancer_hallmarks\n:\n\n        \ncell_val\n \n=\n \ncancer_related_lncRNA_df\n[\nhallmark\n][\ni\n]\n\n        \ncell_val\n.\nstrip\n()\n\n        \nif\n \ncell_val\n.\nstartswith\n((\n'+'\n,\n \n'-'\n)):\n\n            \nprint\n(\ncell_val\n,\n \n\"yes\"\n)\n\n        \nbreak\n\n\n\n\n\n\u5206\u5272\u5b57\u7b26\u4e32, \u548c\u8fde\u63a5\u5b57\u7b26\u4e32\n\u00b6\n\n\n# \u5206\u5272\n\n\ntmp_str\n \n=\n \n'a b c d'\n\n\n\nstrlist\n \n=\n \nstr\n.\nsplit\n(\n' '\n)\n\n\n\n# \u8fde\u63a5\n\n\ntmp_list\n \n=\n \n[\n'a'\n,\n \n'1'\n,\n \n'b'\n]\n\n\n\ntmp_str\n \n=\n \n' '\n.\njoin\n(\ntmp_list\n)\n \n# \u5b57\u7b26\u4e32\u662f\u4e00\u4e2a\u5bf9\u8c61\uff0c\u8fd9\u91cc\u6bd4\u8f83\u60f3\u5bf9\u5bf9\u8c61\u8fdb\u884c\u64cd\u4f5c\n\n\n\n# python\u4e2d\u5b57\u7b26\u4e32\u81ea\u5e26\u7684split\u65b9\u6cd5\u4e00\u6b21\u53ea\u80fd\u4f7f\u7528\u4e00\u4e2a\u5b57\u7b26\u5bf9\u5b57\u7b26\u4e32\u8fdb\u884c\u5206\u5272\uff0c\u4f46\u662fpython\u7684\u6b63\u5219\u6a21\u5757\u5219\u53ef\u4ee5\u5b9e\u73b0\u591a\u4e2a\u5b57\u7b26\u5206\u5272\n\n\nimport\n \nre\n\n\nre\n.\nsplit\n(\n'[_#|]'\n,\n'this_is#a|test'\n)\n\n\n# \u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5217\u8868\uff08list\uff09\uff0c\u8f93\u51fa\u7ed3\u679c\u5982\u4e0b\uff1a\n\n\n[\n'this'\n,\n \n'is'\n,\n \n'a'\n,\n \n'test'\n]\n\n\n\n\n\n\u5bf9\u6587\u4ef6\u5730\u5740\u7684\u64cd\u4f5cos.path\n\u00b6\n\n\nimport\n \nos\n\n\n\ncurrent_path\n \n=\n \nos\n.\ngetcwd\n()\n\n\n\nbase_path\n \n=\n \nos\n.\npath\n.\ndirname\n(\ncurrent_path\n)\n\n\n\nlncrna_glist_filename\n \n=\n \n\"fish.txt\"\n\n\n\nfile_path\n \n=\n \nos\n.\npath\n.\njoin\n(\nbase_path\n,\n \n\"Tempresult\"\n,\n \nlncrna_glist_filename\n)\n\n\n\n\n\n\u4e0eos.path\u914d\u5408\u65b0\u5efa\u6587\u4ef6\u5939\n\u00b6\n\n\n# path = \u6587\u4ef6\u8def\u5f84\n\n\n\nos\n.\npath\n.\nexists\n(\npath\n)\n \n# \u5224\u65ad\u6587\u4ef6\u662f\u5426\u5b58\u5728\n\n\n\nos\n.\npath\n.\njoin\n(\n'/home'\n,\n \n'zhangxuan'\n,\n \n'Project'\n,\n \n'readme.txt'\n)\n \n# \u6587\u4ef6\u8def\u5f84\u8fde\u63a5\n\n\n\nos\n.\nmakedirs\n(\n'\u6587\u4ef6\u5939\u540d'\n,\n \nexist_ok\n \n=\n \nTrue\n)\n \n# \u65b0\u5efa\u6587\u4ef6\u5939\uff0c\u5982\u679c\u5df2\u7ecf\u5b58\u5728exist_ok = True\u4e0d\u4f1a\u62a5\u9519\n\n\n\n\n\n\u683c\u5f0f\u5316\u5b57\u7b26\u4e32\n\u00b6\n\n\n# \u5bf9\u5b57\u7b26\u4e32\u7684\u4f7f\u7528\uff0c\u4e3b\u8981\u4e0d\u8981\u4f7f\u7528\u5173\u952e\u5b57\uff0c\u6bd4\u5982str\u662fpython3\u4e2d\u7684\u4e00\u4e2a\u51fd\u6570\n\n\ntmp_str\n \n=\n \n\"\u8fd9\u662f\u7b2c\u4e00\u4e2a\u53c2\u6570param1 = {}; \u8fd9\u662f\u7b2c\u4e8c\u4e2a\u53c2\u6570param2 = {}\"\n.\nformat\n(\nparam1\n,\n \nparam2\n)\n\n\n\n# \u4fdd\u7559\u6709\u6548\u5b57\u7b26\u5982\u4f55\u64cd\u4f5c\uff1f\u7b49\u540e\u7eed\u78b0\u5230\u4e4b\u540e\u6dfb\u52a0\n\n\n# put code here\n\n\n\n\n\n\u5b57\u5178dict\uff08\u54c8\u5e0chash\uff09\u7684\u4f7f\u7528\n\u00b6\n\n\n# \u4e00\u7ef4\u5b57\u5178\n\n\nfasta_sequence\n \n=\n \ndict\n()\n \n# \u5b9a\u4e49\n\n\n\nfasta_sequence\n[\n'gene1'\n]\n \n=\n \n'ATGC'\n\n\n\nfasta_sequence\n[\n'gene2'\n]\n \n=\n \n'ATGC'\n\n\n\n# result: {'gene1': 'ATGC', 'gene2': 'ATGC'}\n\n\n\n# \u4e8c\u7ef4\u5b57\u5178\n\n\nfasta_sequence\n[\n'gene1'\n][\n'gene2'\n]\n \n=\n \n'ATGC'\n \n# \u4e8c\u7ef4\u5b57\u5178\u4e0d\u80fd\u76f4\u63a5\u8d4b\u503c\n\n\n\n# \u4e0a\u9762\u7684\u4ee3\u7801\u4f1a\u51fa\u73b0\u8fd9\u79cd\u9519\u8bef\uff1aTypeError: 'str' object does not support item assignment\n\n\n\n# \u5e94\u8be5\u8fd9\u6837\u521b\u5efapython\u4e8c\u7ef4\u54c8\u5e0c\uff08\u5b57\u5178\uff09\n\n\nfasta_sequence\n \n=\n \ndict\n()\n\n\n\nfasta_sequence\n.\nsetdefault\n(\n'gene1'\n,\n \n{})\n\n\n\nfasta_sequence\n[\n'gene1'\n][\n'gene2'\n]\n \n=\n \n'ATGC'\n\n\n\nresult\n:\n \n{\n'gene1'\n:\n \n{\n'gene2'\n:\n \n'a'\n}}\n\n\n\n# \u5b57\u5178\u8f93\u51fa\u662f\u6309key\u6216\u8005value\u6392\u5e8fpython3\n\n\n>>\n \ndic\n\n\n{\n'a'\n:\n3\n \n,\n \n'b'\n:\n2\n \n,\n \n'c'\n:\n \n1\n}\n\n\n>>\n \nsorted\n(\ndic\n.\nitems\n(),\n \nkey\n=\nlambda\n \nx\n:\nx\n[\n0\n],\n \nreverse\n=\nTrue\n)\n \n# \u6309\u7167\u7b2c0\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217\n\n\n[(\n'c'\n,\n \n1\n),\n \n(\n'b'\n,\n \n2\n),\n \n(\n'a'\n,\n \n3\n)]\n\n\n>>\n \nsorted\n(\ndic\n.\nitems\n(),\n \nkey\n=\nlambda\n \nx\n:\nx\n[\n0\n],\n \nreverse\n=\nFalse\n)\n \n# \u6309\u7167\u7b2c0\u4e2a\u5143\u7d20\u5347\u5e8f\u6392\u5217\n\n\n[(\n'a'\n,\n \n3\n),\n \n(\n'b'\n,\n \n2\n),\n \n(\n'c'\n,\n \n1\n)]\n\n\n>>\n \nsorted\n(\ndic\n.\nitems\n(),\n \nkey\n=\nlambda\n \nx\n:\nx\n[\n1\n],\n \nreverse\n=\nTrue\n)\n \n# \u6309\u7167\u7b2c1\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217\n\n\n[(\n'a'\n,\n \n3\n),\n \n(\n'b'\n,\n \n2\n),\n \n(\n'c'\n,\n \n1\n)]\n\n\n>>\n \nsorted\n(\ndic\n.\nitems\n(),\n \nkey\n=\nlambda\n \nx\n:\nx\n[\n1\n],\n \nreverse\n=\nFalse\n)\n \n# \u6309\u7167\u7b2c1\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217\n\n\n[(\n'c'\n,\n \n1\n),\n \n(\n'b'\n,\n \n2\n),\n \n(\n'a'\n,\n \n3\n)]\n\n\n\n\n\npython\u6709\u5e8fhash\n\u00b6\n\n\nfrom\n \ncollect\n \nimport\n \nsortdict\n\n\n\n\n\nlambda\u51fd\u6570\u7684\u4f7f\u7528\n\u00b6\n\n\ngene_list\n \n=\n \n[\n' gene1'\n,\n \n'gene2 '\n]\n\n\n\nmap_object\n \n=\n \nmap\n(\nlambda\n \nx\n:\nx\n.\nstrip\n(),\n \ngene_list\n)\n \n# \u8fd9\u91cc\u8fd4\u56de\u7684\u662f\u4e00\u4e2amap\u5bf9\u8c61\uff0c \u8981\u8f6c\u53d8\u6210list\u624d\u597d\u7528\n\n\n\ngene_new_list\n \n=\n \nlist\n(\nmap_object\n)\n\n\n\n# \u8fd9\u91cc\u6709\u4e2a\u4f8b\u5b50\uff1a\u628a\u5217\u8868\u6240\u6709\u7684\u5143\u7d20\u53d8\u6210\u5b57\u7b26\u4e32\u7c7b\u578b\n\n\n\ntmp_list\n \n=\n \n[\n'str1'\n,\n \n123\n]\n\n\n\ntmp_str_list\n \n=\n \nlist\n(\nmap\n(\nstr\n,\n \ntmp_list\n))\n\n\n\n\n\n\u9ad8\u7ea7\u5217\u8868\u64cd\u4f5c\n\u00b6\n\n\nimport\n \nos\n\n\nfiles\n \n=\n \nos\n.\nlistdir\n()\n\n\nnames\n \n=\n \n[\nf\n.\nstrip\n()\n \nfor\n \nf\n \nin\n \nfiles\n]\n\n\n\n\n\n\u7edf\u8ba1\u5217\u8868\u4e2d\u5143\u7d20\u51fa\u73b0\u7684\u6b21\u6570\n\u00b6\n\n\nfrom\n \ncollections\n \nimport\n \nCounter\n  \n\n\nvalues\n \n=\n \n[\n'zhangsan'\n,\n'lisi'\n,\n'lisi'\n,\n'wangwu'\n,\n'wangwu'\n,\n'lisi'\n,\n'zhangsan'\n,\n'zhangsan'\n,\n'zhangsan'\n,\n'zhangsan'\n,\n'mazi'\n,\n'mazi'\n,\n'wangwu'\n,\n'wangwu'\n,\n'mazi'\n,\n \n'lisi'\n,\n'mazi'\n,\n'mazi'\n,\n'mazi'\n,\n \n'wangwu'\n,\n'mazi'\n,]\n  \n\nvalues_counts\n \n=\n \nCounter\n(\nvalues\n)\n  \n\ntop_2\n \n=\n \nvalues_counts\n.\nmost_common\n(\n2\n)\n  \n\nprint\n(\ntop_2\n)\n\n\n\n\n\n\u5404\u79cd\u7c7b\u578b\u8f6c\u6362\n\u00b6\n\n\nnum\n \n=\n \n'123'\n\n\n\ntmp_str\n \n=\n \nstr\n(\nnum\n)\n \n# \u6570\u503c\u7c7b\u578b\u6362\u5b57\u7b26\u4e32\u7c7b\u578b\n\n\n\ntmp_chr\n \n=\n \n'abc'\n\n\n\ntmp_upper_chr\n \n=\n \ntmp_chr\n.\nupper\n()\n \n# \u5b57\u7b26\u4e32\u5927\u5199\u8f6c\u6362\u6210\u5c0f\u5199\n\n\n\ntmp_upper_chr\n \n=\n \ntmp_upper_chr\n.\nlower\n()\n \n# \u5b57\u7b26\u4e32\u5c0f\u5199\u8f6c\u6362\u6210\u5927\u5199\n\n\n\nnum\n \n=\n \nlist\n(\nrange\n(\n97\n,\n123\n))\n\n\n\nalphabet\n \n=\n \nlist\n(\nmap\n(\nchr\n,\nnum\n))\n \n# chr\u51fd\u6570\u628a\u6570\u503c\u8f6c\u6362\u6210\u5b57\u7b26\n\n\n\nlower_str\n \n=\n \n\"\"\n.\njoin\n(\nalphabet\n)\n\n\n\nupper_str\n \n=\n \nlower_str\n.\nupper\n()\n\n\n\nupper_str\n \n=\n \nupper_str\n \n+\n \n\"0123456789\"\n\n\n\n\n\ntry except\n\u00b6\n\n\ntry\n:\n\n    \nvalue\n \n=\n \nfasta\n[\nkey\n]\n\n\nexcept\n \nKeyerror\n:\n\n    \nprint\n(\n'key error!'\n)\n\n    \nbreak\n\n\nelse\n:\n\n    \nprint\n(\n'key exists!'\n)\n\n\n\n\n\njson\n\u00b6\n\n\nimport\n \njson\n\n\n\ndata\n \n=\n \n{\n\n    \n'name'\n:\n \n'zhangxuan'\n,\n\n    \n'height'\n:\n \n'162'\n,\n\n    \n'age'\n:\n \n'28'\n\n\n}\n\n\n\njson_str\n \n=\n \njson\n.\ndumps\n(\ndata\n)\n \n# Python\u6570\u636e\u7ed3\u6784\u8f6c\u6362\u6210JSON\n\n\n\ndata1\n \n=\n \njson\n.\nloads\n(\njson_str\n)\n \n# JSON\u7f16\u7801\u7684\u5b57\u7b26\u4e32\u8f6c\u6362\u6210Python\u6570\u636e\u7ed3\u6784\n\n\n\n# \u5982\u679c\u5904\u7406\u7684\u662f\u6587\u4ef6\n\n\n# Writing JSON data\n\n\nwith\n \nopen\n(\n'data.json'\n,\n \n'w'\n)\n \nas\n \nf\n:\n\n    \njson\n.\ndump\n(\ndata\n,\n \nf\n)\n\n\n\n# Reading data back\n\n\nwith\n \nopen\n(\n'data.json'\n,\n \n'r'\n)\n \nas\n \nf\n:\n\n    \ndata\n \n=\n \njson\n.\nload\n(\nf\n)\n\n\n\n\n\n\u6392\u5e8f\n\u00b6\n\n\n# \u5217\u8868\u6392\u5e8f\n\n\nb\n \n=\n \n[\n'b'\n,\n \n'a'\n]\n\n\nb\n.\nsort\n()\n\n\nb\n \n->\n \n[\n'a'\n,\n \n'b'\n]\n\n\n\n# \u5b57\u5178\u8f93\u51fa\u6392\u5e8f\n\n\n\n\n\nlogging\u5305\n\u00b6\n\n\n# ----------------------------------\n\n\nimport\n \nlogging\n\n\n\nlog\n \n=\n \nlogging\n.\ngetLogger\n(\n__name__\n)\n\n\n\nlog\n.\ncritical\n(\n'Host \n%s\n unknown'\n,\n \nhostname\n)\n\n\nlog\n.\nerror\n(\n\"Couldn't find \n%r\n\"\n,\n \nitem\n)\n\n\nlog\n.\nwarning\n(\n'Feature is deprecated'\n)\n\n\nlog\n.\ninfo\n(\n'Opening file \n%r\n, mode=\n%r\n'\n,\n \nfilename\n,\n \nmode\n)\n\n\nlog\n.\ndebug\n(\n'Got here'\n)\n\n\n# ----------------------------------\n\n\n\nsee \nmore\n\n\n\u865a\u62df\u73af\u5883\uff0cenv\n\u00b6\n\n\nvirtualenv\n \u662f\u4e00\u4e2a\u521b\u5efa\u9694\u7edd\u7684Python\u73af\u5883\u7684\u5de5\u5177\u3002\n\n\n\u901a\u8fc7pip3\u5b89\u88c5virtualenv(\u6211\u60f3\u8981python3\u7684\u73af\u5883)\uff1a\n\npip install virtualenv\n\n\n\u6d4b\u8bd5\u4f60\u7684\u5b89\u88c5\n\nvirtualenv --version\n\n\n\u8981\u5f00\u59cb\u4f7f\u7528\u865a\u62df\u73af\u5883\uff0c\u5176\u9700\u8981\u88ab\u6fc0\u6d3b\uff1a\n\nsource my_project/bin/activate\n\n\n\u5982\u679c\u4f60\u5728\u865a\u62df\u73af\u5883\u4e2d\u6682\u65f6\u5b8c\u6210\u4e86\u5de5\u4f5c\uff0c\u5219\u53ef\u4ee5\u505c\u7528\u5b83\uff1a\n\ndeactivate\n\n\nrandom\n\u00b6\n\n\n\n\n\n\n\u4f7f\u7528python random\u6a21\u5757\u7684choice\u65b9\u6cd5\u968f\u673a\u9009\u62e9\u67d0\u4e2a\u5143\u7d20\n\nfrom\n \nrandom\n \nimport\n \nchoice\n\n\nfoo\n \n=\n \n[\n'a'\n,\n \n'b'\n,\n \n'c'\n,\n \n'd'\n,\n \n'e'\n]\n\n\nchoice\n(\nfoo\n)\n\n\n\n\n\n\n\n\n\u4f7f\u7528python random\u6a21\u5757\u7684sample\u51fd\u6570\u4ece\u5217\u8868\u4e2d\u968f\u673a\u9009\u62e9\u4e00\u7ec4\u5143\u7d20\n\nimport\n \nrandom\n\n\nlist\n \n=\n \n[\n1\n,\n \n2\n,\n \n3\n,\n \n4\n,\n \n5\n,\n \n6\n,\n \n7\n,\n \n8\n,\n \n9\n,\n \n10\n]\n\n\nslice\n \n=\n \nrandom\n.\nsample\n(\nlist\n,\n \n5\n)\n  \n#\u4ecelist\u4e2d\u968f\u673a\u83b7\u53d65\u4e2a\u5143\u7d20\uff0c\u4f5c\u4e3a\u4e00\u4e2a\u7247\u65ad\u8fd4\u56de\n\n\nslice\n\n\nlist\n \n#\u539f\u6709\u5e8f\u5217\u5e76\u6ca1\u6709\u6539\u53d8\u3002\n\n\n\n\n\n\n\n\npickle\n\u00b6\n\n\nimport\n \npprint\n,\n \npickle\n\n\n\npkl_file\n \n=\n \nopen\n(\n'data.pkl'\n,\n \n'rb'\n)\n\n\n\ndata1\n \n=\n \npickle\n.\nload\n(\npkl_file\n)\n\n\npprint\n.\npprint\n(\ndata1\n)\n\n\n\n\n\n\u67e5\u770b\u5f53\u524d\u4f7f\u7528\u7684python\u7684\u5305\u5b89\u88c5\u76ee\u5f55\n\u00b6\n\n\nimport\n \nsys\n\n\nsys\n.\npath\n\n\n\n\n\nsys \u6267\u884c\u7cfb\u7edf\u6216shell\u547d\u4ee4\n\u00b6\n\n\nimport\n \nsys\n\n\nsys\n.\nexec\n()\n\n\n\n\n\n\u67e5\u770b\u4f7f\u7528tempfile\u5305, \u521b\u5efa\u7684\u4e34\u65f6\u6587\u4ef6\u5728\u7535\u8111\u4e0a\u7684\u4f4d\u7f6e\n\u00b6\n\n\nimport\n \ntempfile\n\n\nwith\n \ntempfile\n.\nmkdirtempdir\n()\n \nas\n \nfp\n:\n\n    \nfp\n.\nname\n()\n\n\n\n\n\nspyder\n\u00b6\n\n\n\u5220\u9664\u6240\u6709\u53d8\u91cf: \nreset\n + y, \u5220\u9664\u5355\u4e2a\u53d8\u91cf\u7528\u53f3\u952e\n\n\u6253\u5f00\u591a\u4e2aspyder: \nspyder --new-instance\n Run a new instance of Spyder, even if the instance mode has been turned on (default)\n\n\n\u96c6\u5408set\n\u00b6\n\n\nA B \u4ea4\u96c6 \nA & B\n\nA B \u5e76\u96c6 \nA | B\n\nA B \u5dee\u96c6 \nA - B\n  \n\n\n\u5339\u914d\n\u00b6\n\n\nimport\n \nre\n\n\n\n\n\n\n\nglob\n\u00b6",
+            "title": "Python"
+        },
+        {
+            "location": "/notesmd/programing/python/#python3",
+            "text": "",
+            "title": "python3"
+        },
+        {
+            "location": "/notesmd/programing/python/#_1",
+            "text": "python3 cookbook  |  \u672c\u5730\u4e0b\u8f7d  runoob\u83dc\u9e1f",
+            "title": "\u6559\u7a0b"
+        },
+        {
+            "location": "/notesmd/programing/python/#_2",
+            "text": "f   =   open ( \"read.txt\" ,   \"r\" )   # \u6587\u672c\u6a21\u5f0f  f   =   open ( \"read.txt\" ,   \"r\" ,   encoding   =   \"utf-8\" )   # \u8bfb\u6587\u4ef6\u7684\u65f6\u5019\u6ce8\u610f\u7f16\u7801\u65b9\u5f0f,  #python\u9ed8\u8ba4\u662funicode\u7f16\u7801\uff0c\u4f46\u662f\u8bfb\u53d6\u7684\u6587\u4ef6\u5982\u6709\u4e00\u4e9b\u4e2d\u6587\u7a7a\u683c\u3001\u6a2a\u6760\u3001\u5e0c\u814a\u5b57\u6bcd\u7684  #\u65f6\u5019\u4f1a\u62a5\u9519\u3002\u5728web\u5f00\u53d1\u4e2d\u7edf\u4e00\u4f7f\u7528utf-8\u7f16\u7801\u65b9\u5f0f\u6700\u597d\uff0c\u56e0\u4e3a\u7edd\u5927\u591a\u6570\u6d4f\u89c8\u5668\u9ed8\u8ba4\u90fd\u662futf-8\u7f16\u7801  f   =   open ( \"read.txt\" ,   \"rb\" )   # \u4e8c\u8fdb\u5236\u6a21\u5f0f  whole_file   =   f . read ()   # \u8bfb\u53d6\u6574\u4e2a\u6587\u4ef6  first_line   =   f . readline ()   # \u8bfb\u53d6\u4e00\u884c  lines   =   f . readlines ()   # \u8bfb\u53d6\u6587\u4ef6\u5230\u4e00\u4e2a\u5217\u8868  f . close ()   # \u5173\u95ed\u6587\u4ef6",
+            "title": "\u8bfb\u53d6\u6587\u4ef6"
+        },
+        {
+            "location": "/notesmd/programing/python/#_3",
+            "text": "f   =   open ( \"write\" ,   \"w\" )   # \u6587\u672c\u6a21\u5f0f  f   =   open ( \"write\" ,   \"wb\" )   # \u4e8c\u8fdb\u5236\u6a21\u5f0f",
+            "title": "\u5199\u6587\u4ef6"
+        },
+        {
+            "location": "/notesmd/programing/python/#_4",
+            "text": "tmp_str   =   ' a b '  str   =   str . strip ()   # \u8bfb\u53d6\u6587\u4ef6\u7684\u65f6\u5019\u8fdb\u884c\u6b64\u64cd\u4f5c\uff0c\u597d\u5904\u592a\u591a\u4e86, \u6bd4\u5982\u4e2d\u6587\u7684\u7279\u6b8a\u5b57\u7b26\u5728linux\u6216\u8005\u540e\u7eed\u5904\u7406\u540d\u5b57\u4e0d\u5339\u914d",
+            "title": "\u53bb\u6389\u5b57\u7b26\u4e32\u524d\u540e\u7684\u7a7a\u767d\u5b57\u7b26"
+        },
+        {
+            "location": "/notesmd/programing/python/#_5",
+            "text": "str . startswith ( '+-' )   # \u8d77\u59cb  str . endswith ( '+-' )   # \u7ed3\u5c3e  # \u5982\u679c\u4f60\u60f3\u68c0\u67e5\u591a\u79cd\u5339\u914d\u53ef\u80fd\uff0c\u53ea\u9700\u8981\u5c06\u6240\u6709\u7684\u5339\u914d\u9879\u653e\u5165\u5230\u4e00\u4e2a\u5143\u7ec4\u4e2d\u53bb\uff0c \u7136\u540e\u4f20\u7ed9 startswith() \u6216\u8005 endswith() \u65b9\u6cd5\uff1a  for   i   in   cancer_related_lncRNA_df . index : \n     for   hallmark   in   cancer_hallmarks : \n         cell_val   =   cancer_related_lncRNA_df [ hallmark ][ i ] \n         cell_val . strip () \n         if   cell_val . startswith (( '+' ,   '-' )): \n             print ( cell_val ,   \"yes\" ) \n         break",
+            "title": "\u5224\u65ad\u5b57\u7b26\u4e32\u7684\u8d77\u59cb\u548c\u7ed3\u5c3e"
+        },
+        {
+            "location": "/notesmd/programing/python/#_6",
+            "text": "# \u5206\u5272  tmp_str   =   'a b c d'  strlist   =   str . split ( ' ' )  # \u8fde\u63a5  tmp_list   =   [ 'a' ,   '1' ,   'b' ]  tmp_str   =   ' ' . join ( tmp_list )   # \u5b57\u7b26\u4e32\u662f\u4e00\u4e2a\u5bf9\u8c61\uff0c\u8fd9\u91cc\u6bd4\u8f83\u60f3\u5bf9\u5bf9\u8c61\u8fdb\u884c\u64cd\u4f5c  # python\u4e2d\u5b57\u7b26\u4e32\u81ea\u5e26\u7684split\u65b9\u6cd5\u4e00\u6b21\u53ea\u80fd\u4f7f\u7528\u4e00\u4e2a\u5b57\u7b26\u5bf9\u5b57\u7b26\u4e32\u8fdb\u884c\u5206\u5272\uff0c\u4f46\u662fpython\u7684\u6b63\u5219\u6a21\u5757\u5219\u53ef\u4ee5\u5b9e\u73b0\u591a\u4e2a\u5b57\u7b26\u5206\u5272  import   re  re . split ( '[_#|]' , 'this_is#a|test' )  # \u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5217\u8868\uff08list\uff09\uff0c\u8f93\u51fa\u7ed3\u679c\u5982\u4e0b\uff1a  [ 'this' ,   'is' ,   'a' ,   'test' ]",
+            "title": "\u5206\u5272\u5b57\u7b26\u4e32, \u548c\u8fde\u63a5\u5b57\u7b26\u4e32"
+        },
+        {
+            "location": "/notesmd/programing/python/#ospath",
+            "text": "import   os  current_path   =   os . getcwd ()  base_path   =   os . path . dirname ( current_path )  lncrna_glist_filename   =   \"fish.txt\"  file_path   =   os . path . join ( base_path ,   \"Tempresult\" ,   lncrna_glist_filename )",
+            "title": "\u5bf9\u6587\u4ef6\u5730\u5740\u7684\u64cd\u4f5cos.path"
+        },
+        {
+            "location": "/notesmd/programing/python/#ospath_1",
+            "text": "# path = \u6587\u4ef6\u8def\u5f84  os . path . exists ( path )   # \u5224\u65ad\u6587\u4ef6\u662f\u5426\u5b58\u5728  os . path . join ( '/home' ,   'zhangxuan' ,   'Project' ,   'readme.txt' )   # \u6587\u4ef6\u8def\u5f84\u8fde\u63a5  os . makedirs ( '\u6587\u4ef6\u5939\u540d' ,   exist_ok   =   True )   # \u65b0\u5efa\u6587\u4ef6\u5939\uff0c\u5982\u679c\u5df2\u7ecf\u5b58\u5728exist_ok = True\u4e0d\u4f1a\u62a5\u9519",
+            "title": "\u4e0eos.path\u914d\u5408\u65b0\u5efa\u6587\u4ef6\u5939"
+        },
+        {
+            "location": "/notesmd/programing/python/#_7",
+            "text": "# \u5bf9\u5b57\u7b26\u4e32\u7684\u4f7f\u7528\uff0c\u4e3b\u8981\u4e0d\u8981\u4f7f\u7528\u5173\u952e\u5b57\uff0c\u6bd4\u5982str\u662fpython3\u4e2d\u7684\u4e00\u4e2a\u51fd\u6570  tmp_str   =   \"\u8fd9\u662f\u7b2c\u4e00\u4e2a\u53c2\u6570param1 = {}; \u8fd9\u662f\u7b2c\u4e8c\u4e2a\u53c2\u6570param2 = {}\" . format ( param1 ,   param2 )  # \u4fdd\u7559\u6709\u6548\u5b57\u7b26\u5982\u4f55\u64cd\u4f5c\uff1f\u7b49\u540e\u7eed\u78b0\u5230\u4e4b\u540e\u6dfb\u52a0  # put code here",
+            "title": "\u683c\u5f0f\u5316\u5b57\u7b26\u4e32"
+        },
+        {
+            "location": "/notesmd/programing/python/#dicthash",
+            "text": "# \u4e00\u7ef4\u5b57\u5178  fasta_sequence   =   dict ()   # \u5b9a\u4e49  fasta_sequence [ 'gene1' ]   =   'ATGC'  fasta_sequence [ 'gene2' ]   =   'ATGC'  # result: {'gene1': 'ATGC', 'gene2': 'ATGC'}  # \u4e8c\u7ef4\u5b57\u5178  fasta_sequence [ 'gene1' ][ 'gene2' ]   =   'ATGC'   # \u4e8c\u7ef4\u5b57\u5178\u4e0d\u80fd\u76f4\u63a5\u8d4b\u503c  # \u4e0a\u9762\u7684\u4ee3\u7801\u4f1a\u51fa\u73b0\u8fd9\u79cd\u9519\u8bef\uff1aTypeError: 'str' object does not support item assignment  # \u5e94\u8be5\u8fd9\u6837\u521b\u5efapython\u4e8c\u7ef4\u54c8\u5e0c\uff08\u5b57\u5178\uff09  fasta_sequence   =   dict ()  fasta_sequence . setdefault ( 'gene1' ,   {})  fasta_sequence [ 'gene1' ][ 'gene2' ]   =   'ATGC'  result :   { 'gene1' :   { 'gene2' :   'a' }}  # \u5b57\u5178\u8f93\u51fa\u662f\u6309key\u6216\u8005value\u6392\u5e8fpython3  >>   dic  { 'a' : 3   ,   'b' : 2   ,   'c' :   1 }  >>   sorted ( dic . items (),   key = lambda   x : x [ 0 ],   reverse = True )   # \u6309\u7167\u7b2c0\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217  [( 'c' ,   1 ),   ( 'b' ,   2 ),   ( 'a' ,   3 )]  >>   sorted ( dic . items (),   key = lambda   x : x [ 0 ],   reverse = False )   # \u6309\u7167\u7b2c0\u4e2a\u5143\u7d20\u5347\u5e8f\u6392\u5217  [( 'a' ,   3 ),   ( 'b' ,   2 ),   ( 'c' ,   1 )]  >>   sorted ( dic . items (),   key = lambda   x : x [ 1 ],   reverse = True )   # \u6309\u7167\u7b2c1\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217  [( 'a' ,   3 ),   ( 'b' ,   2 ),   ( 'c' ,   1 )]  >>   sorted ( dic . items (),   key = lambda   x : x [ 1 ],   reverse = False )   # \u6309\u7167\u7b2c1\u4e2a\u5143\u7d20\u964d\u5e8f\u6392\u5217  [( 'c' ,   1 ),   ( 'b' ,   2 ),   ( 'a' ,   3 )]",
+            "title": "\u5b57\u5178dict\uff08\u54c8\u5e0chash\uff09\u7684\u4f7f\u7528"
+        },
+        {
+            "location": "/notesmd/programing/python/#pythonhash",
+            "text": "from   collect   import   sortdict",
+            "title": "python\u6709\u5e8fhash"
+        },
+        {
+            "location": "/notesmd/programing/python/#lambda",
+            "text": "gene_list   =   [ ' gene1' ,   'gene2 ' ]  map_object   =   map ( lambda   x : x . strip (),   gene_list )   # \u8fd9\u91cc\u8fd4\u56de\u7684\u662f\u4e00\u4e2amap\u5bf9\u8c61\uff0c \u8981\u8f6c\u53d8\u6210list\u624d\u597d\u7528  gene_new_list   =   list ( map_object )  # \u8fd9\u91cc\u6709\u4e2a\u4f8b\u5b50\uff1a\u628a\u5217\u8868\u6240\u6709\u7684\u5143\u7d20\u53d8\u6210\u5b57\u7b26\u4e32\u7c7b\u578b  tmp_list   =   [ 'str1' ,   123 ]  tmp_str_list   =   list ( map ( str ,   tmp_list ))",
+            "title": "lambda\u51fd\u6570\u7684\u4f7f\u7528"
+        },
+        {
+            "location": "/notesmd/programing/python/#_8",
+            "text": "import   os  files   =   os . listdir ()  names   =   [ f . strip ()   for   f   in   files ]",
+            "title": "\u9ad8\u7ea7\u5217\u8868\u64cd\u4f5c"
+        },
+        {
+            "location": "/notesmd/programing/python/#_9",
+            "text": "from   collections   import   Counter    values   =   [ 'zhangsan' , 'lisi' , 'lisi' , 'wangwu' , 'wangwu' , 'lisi' , 'zhangsan' , 'zhangsan' , 'zhangsan' , 'zhangsan' , 'mazi' , 'mazi' , 'wangwu' , 'wangwu' , 'mazi' ,   'lisi' , 'mazi' , 'mazi' , 'mazi' ,   'wangwu' , 'mazi' ,]    values_counts   =   Counter ( values )    top_2   =   values_counts . most_common ( 2 )    print ( top_2 )",
+            "title": "\u7edf\u8ba1\u5217\u8868\u4e2d\u5143\u7d20\u51fa\u73b0\u7684\u6b21\u6570"
+        },
+        {
+            "location": "/notesmd/programing/python/#_10",
+            "text": "num   =   '123'  tmp_str   =   str ( num )   # \u6570\u503c\u7c7b\u578b\u6362\u5b57\u7b26\u4e32\u7c7b\u578b  tmp_chr   =   'abc'  tmp_upper_chr   =   tmp_chr . upper ()   # \u5b57\u7b26\u4e32\u5927\u5199\u8f6c\u6362\u6210\u5c0f\u5199  tmp_upper_chr   =   tmp_upper_chr . lower ()   # \u5b57\u7b26\u4e32\u5c0f\u5199\u8f6c\u6362\u6210\u5927\u5199  num   =   list ( range ( 97 , 123 ))  alphabet   =   list ( map ( chr , num ))   # chr\u51fd\u6570\u628a\u6570\u503c\u8f6c\u6362\u6210\u5b57\u7b26  lower_str   =   \"\" . join ( alphabet )  upper_str   =   lower_str . upper ()  upper_str   =   upper_str   +   \"0123456789\"",
+            "title": "\u5404\u79cd\u7c7b\u578b\u8f6c\u6362"
+        },
+        {
+            "location": "/notesmd/programing/python/#try-except",
+            "text": "try : \n     value   =   fasta [ key ]  except   Keyerror : \n     print ( 'key error!' ) \n     break  else : \n     print ( 'key exists!' )",
+            "title": "try except"
+        },
+        {
+            "location": "/notesmd/programing/python/#json",
+            "text": "import   json  data   =   { \n     'name' :   'zhangxuan' , \n     'height' :   '162' , \n     'age' :   '28'  }  json_str   =   json . dumps ( data )   # Python\u6570\u636e\u7ed3\u6784\u8f6c\u6362\u6210JSON  data1   =   json . loads ( json_str )   # JSON\u7f16\u7801\u7684\u5b57\u7b26\u4e32\u8f6c\u6362\u6210Python\u6570\u636e\u7ed3\u6784  # \u5982\u679c\u5904\u7406\u7684\u662f\u6587\u4ef6  # Writing JSON data  with   open ( 'data.json' ,   'w' )   as   f : \n     json . dump ( data ,   f )  # Reading data back  with   open ( 'data.json' ,   'r' )   as   f : \n     data   =   json . load ( f )",
+            "title": "json"
+        },
+        {
+            "location": "/notesmd/programing/python/#_11",
+            "text": "# \u5217\u8868\u6392\u5e8f  b   =   [ 'b' ,   'a' ]  b . sort ()  b   ->   [ 'a' ,   'b' ]  # \u5b57\u5178\u8f93\u51fa\u6392\u5e8f",
+            "title": "\u6392\u5e8f"
+        },
+        {
+            "location": "/notesmd/programing/python/#logging",
+            "text": "# ----------------------------------  import   logging  log   =   logging . getLogger ( __name__ )  log . critical ( 'Host  %s  unknown' ,   hostname )  log . error ( \"Couldn't find  %r \" ,   item )  log . warning ( 'Feature is deprecated' )  log . info ( 'Opening file  %r , mode= %r ' ,   filename ,   mode )  log . debug ( 'Got here' )  # ----------------------------------  \nsee  more",
+            "title": "logging\u5305"
+        },
+        {
+            "location": "/notesmd/programing/python/#env",
+            "text": "virtualenv  \u662f\u4e00\u4e2a\u521b\u5efa\u9694\u7edd\u7684Python\u73af\u5883\u7684\u5de5\u5177\u3002  \u901a\u8fc7pip3\u5b89\u88c5virtualenv(\u6211\u60f3\u8981python3\u7684\u73af\u5883)\uff1a pip install virtualenv  \u6d4b\u8bd5\u4f60\u7684\u5b89\u88c5 virtualenv --version  \u8981\u5f00\u59cb\u4f7f\u7528\u865a\u62df\u73af\u5883\uff0c\u5176\u9700\u8981\u88ab\u6fc0\u6d3b\uff1a source my_project/bin/activate  \u5982\u679c\u4f60\u5728\u865a\u62df\u73af\u5883\u4e2d\u6682\u65f6\u5b8c\u6210\u4e86\u5de5\u4f5c\uff0c\u5219\u53ef\u4ee5\u505c\u7528\u5b83\uff1a deactivate",
+            "title": "\u865a\u62df\u73af\u5883\uff0cenv"
+        },
+        {
+            "location": "/notesmd/programing/python/#random",
+            "text": "\u4f7f\u7528python random\u6a21\u5757\u7684choice\u65b9\u6cd5\u968f\u673a\u9009\u62e9\u67d0\u4e2a\u5143\u7d20 from   random   import   choice  foo   =   [ 'a' ,   'b' ,   'c' ,   'd' ,   'e' ]  choice ( foo )     \u4f7f\u7528python random\u6a21\u5757\u7684sample\u51fd\u6570\u4ece\u5217\u8868\u4e2d\u968f\u673a\u9009\u62e9\u4e00\u7ec4\u5143\u7d20 import   random  list   =   [ 1 ,   2 ,   3 ,   4 ,   5 ,   6 ,   7 ,   8 ,   9 ,   10 ]  slice   =   random . sample ( list ,   5 )    #\u4ecelist\u4e2d\u968f\u673a\u83b7\u53d65\u4e2a\u5143\u7d20\uff0c\u4f5c\u4e3a\u4e00\u4e2a\u7247\u65ad\u8fd4\u56de  slice  list   #\u539f\u6709\u5e8f\u5217\u5e76\u6ca1\u6709\u6539\u53d8\u3002",
+            "title": "random"
+        },
+        {
+            "location": "/notesmd/programing/python/#pickle",
+            "text": "import   pprint ,   pickle  pkl_file   =   open ( 'data.pkl' ,   'rb' )  data1   =   pickle . load ( pkl_file )  pprint . pprint ( data1 )",
+            "title": "pickle"
+        },
+        {
+            "location": "/notesmd/programing/python/#python",
+            "text": "import   sys  sys . path",
+            "title": "\u67e5\u770b\u5f53\u524d\u4f7f\u7528\u7684python\u7684\u5305\u5b89\u88c5\u76ee\u5f55"
+        },
+        {
+            "location": "/notesmd/programing/python/#sys-shell",
+            "text": "import   sys  sys . exec ()",
+            "title": "sys \u6267\u884c\u7cfb\u7edf\u6216shell\u547d\u4ee4"
+        },
+        {
+            "location": "/notesmd/programing/python/#tempfile",
+            "text": "import   tempfile  with   tempfile . mkdirtempdir ()   as   fp : \n     fp . name ()",
+            "title": "\u67e5\u770b\u4f7f\u7528tempfile\u5305, \u521b\u5efa\u7684\u4e34\u65f6\u6587\u4ef6\u5728\u7535\u8111\u4e0a\u7684\u4f4d\u7f6e"
+        },
+        {
+            "location": "/notesmd/programing/python/#spyder",
+            "text": "\u5220\u9664\u6240\u6709\u53d8\u91cf:  reset  + y, \u5220\u9664\u5355\u4e2a\u53d8\u91cf\u7528\u53f3\u952e \n\u6253\u5f00\u591a\u4e2aspyder:  spyder --new-instance  Run a new instance of Spyder, even if the instance mode has been turned on (default)",
+            "title": "spyder"
+        },
+        {
+            "location": "/notesmd/programing/python/#set",
+            "text": "A B \u4ea4\u96c6  A & B \nA B \u5e76\u96c6  A | B \nA B \u5dee\u96c6  A - B",
+            "title": "\u96c6\u5408set"
+        },
+        {
+            "location": "/notesmd/programing/python/#_12",
+            "text": "import   re",
+            "title": "\u5339\u914d"
+        },
+        {
+            "location": "/notesmd/programing/python/#glob",
+            "text": "",
+            "title": "glob"
+        },
+        {
+            "location": "/notesmd/programing/snakemake/",
+            "text": "Snakemake\n\u00b6\n\n\n\n\nSummary: Snakemake is a workflow engine that provides a readable Python-based workflow definition language and a powerful execution environment that scales from single-core workstations to compute clusters without modifying the workflow. It is the first system to support the use of automatically inferred multiple named wildcards (or variables) in input and output filenames. Rules describe how to create\u00a0output files\u00a0from\u00a0input files.\n\n\n\n\nTable of Contents\n\n\n\n\nTutorials\n  \n\n\nExamples\n\n\n\n\nTutorials\n\u00b6\n\n\n\n\nOfficial manual v4.8.0\n\n\nPaper\n\n\n\n\nExamples\n\u00b6\n\n\nexample 1: trimmomatic\n\n# trim by trimmomatic\n\n\n\nimport\n \nos\n\n\n\n# input data\n\n\nsamples\n \n=\n \n{\nf\n[:\n-\n8\n]\n \nfor\n \nf\n \nin\n \nos\n.\nlistdir\n(\n\"clean_data\"\n)\n \nif\n \nf\n.\nendswith\n(\n\".fq.gz\"\n)}\n\n\n\n# some vars\n\n\ncleanDir\n \n=\n \n\"clean_data\"\n\n\ntrimmedDir\n \n=\n \n\"trimmed_data\"\n\n\nmappedDir\n \n=\n \n\"mapped_data\"\n\n\nindexdir\n \n=\n \n\"../../analysis/ref\"\n\n\n\n# this is target file\n\n\nrule\n \nfinal\n:\n\n    \ninput\n:\n \nexpand\n(\ntrimmedDir\n \n+\n \n\"/{sample}_1.paired.fq.gz\"\n,\n \nsample\n=\nsamples\n)\n\n\n\nrule\n \npaired_trimming\n:\n\n    \ninput\n:\n\n        \nfwd\n=\n \ncleanDir\n \n+\n \n\"/{sample}_1.fq.gz\"\n,\n\n        \nrev\n=\n \ncleanDir\n \n+\n \n\"/{sample}_2.fq.gz\"\n,\n\n    \noutput\n:\n\n        \nfwd_paired\n=\n \ntrimmedDir\n \n+\n \n\"/{sample}_1.paired.fq.gz\"\n,\n\n        \nfwd_unpaired\n=\n \ntrimmedDir\n \n+\n \n\"/{sample}_1.unpaired.fq.gz\"\n,\n\n        \nrev_paired\n=\n \ntrimmedDir\n \n+\n \n\"/{sample}_2.paired.fq.gz\"\n,\n\n        \nrev_unpaired\n=\n \ntrimmedDir\n \n+\n \n\"/{sample}_2.unpaired.fq.gz\"\n,\n\n    \nmessage\n:\n \n\"\"\"---start trimming.---\"\"\"\n\n    \nthreads\n:\n \n4\n\n    \nshell\n:\n \n\"\"\"\n\n\n        trimmomatic PE -threads {threads} {input.fwd} {input.rev} {output.fwd_paired} {output.fwd_unpaired} {output.rev_paired} {output.rev_unpaired} SLIDINGWINDOW:5:20 LEADING:20 TRAILING:20 MINLEN:50\n\n\n    \"\"\"\n\n\n\ndownload this file and just run: \nsnakemake -np -s trimmomatic.Snakefile --cores 16\n to see the jobs first.\nor run: \nsnakemake -s trimmomatic.Snakefile\n to get the result. you may also add \n-F\n to run fource.",
+            "title": "Snakemake"
+        },
+        {
+            "location": "/notesmd/programing/snakemake/#snakemake",
+            "text": "Summary: Snakemake is a workflow engine that provides a readable Python-based workflow definition language and a powerful execution environment that scales from single-core workstations to compute clusters without modifying the workflow. It is the first system to support the use of automatically inferred multiple named wildcards (or variables) in input and output filenames. Rules describe how to create\u00a0output files\u00a0from\u00a0input files.   Table of Contents   Tutorials     Examples",
+            "title": "Snakemake"
+        },
+        {
+            "location": "/notesmd/programing/snakemake/#tutorials",
+            "text": "Official manual v4.8.0  Paper",
+            "title": "Tutorials"
+        },
+        {
+            "location": "/notesmd/programing/snakemake/#examples",
+            "text": "example 1: trimmomatic # trim by trimmomatic  import   os  # input data  samples   =   { f [: - 8 ]   for   f   in   os . listdir ( \"clean_data\" )   if   f . endswith ( \".fq.gz\" )}  # some vars  cleanDir   =   \"clean_data\"  trimmedDir   =   \"trimmed_data\"  mappedDir   =   \"mapped_data\"  indexdir   =   \"../../analysis/ref\"  # this is target file  rule   final : \n     input :   expand ( trimmedDir   +   \"/{sample}_1.paired.fq.gz\" ,   sample = samples )  rule   paired_trimming : \n     input : \n         fwd =   cleanDir   +   \"/{sample}_1.fq.gz\" , \n         rev =   cleanDir   +   \"/{sample}_2.fq.gz\" , \n     output : \n         fwd_paired =   trimmedDir   +   \"/{sample}_1.paired.fq.gz\" , \n         fwd_unpaired =   trimmedDir   +   \"/{sample}_1.unpaired.fq.gz\" , \n         rev_paired =   trimmedDir   +   \"/{sample}_2.paired.fq.gz\" , \n         rev_unpaired =   trimmedDir   +   \"/{sample}_2.unpaired.fq.gz\" , \n     message :   \"\"\"---start trimming.---\"\"\" \n     threads :   4 \n     shell :   \"\"\"          trimmomatic PE -threads {threads} {input.fwd} {input.rev} {output.fwd_paired} {output.fwd_unpaired} {output.rev_paired} {output.rev_unpaired} SLIDINGWINDOW:5:20 LEADING:20 TRAILING:20 MINLEN:50      \"\"\"  \ndownload this file and just run:  snakemake -np -s trimmomatic.Snakefile --cores 16  to see the jobs first.\nor run:  snakemake -s trimmomatic.Snakefile  to get the result. you may also add  -F  to run fource.",
+            "title": "Examples"
+        },
+        {
+            "location": "/notesmd/programing/biopython/",
+            "text": "Working with sequence\n\u00b6\n\n\nif you have a FASTA file \nls_orchid.fasta\n\n\n>gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA\nCGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG\nAATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG\n...\n\n\n\nreading sequence file\n\u00b6\n\n\nfrom\n \nBio\n \nimport\n \nSeqIO\n\n\nfor\n \nseq_record\n \nin\n \nSeqIO\n.\nparse\n(\n\"ls_orchid.fasta\"\n,\n \n\"fasta\"\n):\n\n    \nprint\n(\nseq_record\n.\nid\n)\n\n    \nprint\n(\nseq_record\n.\nname\n)\n\n    \nprint\n(\nseq_record\n.\ndescription\n)\n\n    \nprint\n(\nseq_record\n.\nfeatures\n)\n\n    \nprint\n(\nrepr\n(\nseq_record\n.\nseq\n))\n \n#repr() \u51fd\u6570\u5c06\u5bf9\u8c61\u8f6c\u5316\u4e3a\u4f9b\u89e3\u91ca\u5668\u8bfb\u53d6\u7684\u5f62\u5f0f\u3002\n\n    \nprint\n(\nlen\n(\nseq_record\n))\n\n\n\n\n\nSeqIO.parse return a iterator\n\u00b6\n\n\nrecord_iterator\n \n=\n \nSeqIO\n.\nparse\n(\n\"ls_orchid.fasta\"\n,\n \n\"fasta\"\n)\n\n\nrecord\n \n=\n \nrecord_iterator\n.\nnext\n()\n\n\n\n\n\nGetting a list of the records in a sequence file\n\u00b6\n\n\nfrom\n \nBio\n \nimport\n \nSeqIO\n\n\nrecords\n \n=\n \nlist\n(\nSeqIO\n.\nparse\n(\n\"ls_orchid.gbk\"\n,\n \n\"genbank\"\n))\n\n\n\nprint\n(\n\"Found \n%i\n records\"\n.\nformat\n(\nlen\n(\nrecords\n))\n\n\n\nprint\n \n\"The last record\"\n\n\nlast_record\n \n=\n \nrecords\n[\n-\n1\n]\n \n#using Python's list tricks\n\n\n\n\n\nSee also \nSeqIO.read\n:\n\u00b6\n\n\nfrom\n \nBio\n \nimport\n \nSeqIO\n\n\nrecord\n \n=\n \nSeqIO\n.\nread\n(\n\"ls_orchid.fasta\"\n,\n \n\"fasta\"\n)\n\n\n>>>\n \nrecord\n\n\nSeqRecord\n(\nseq\n=\nSeq\n(\n'CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGG...GGG'\n,\n \nSingleLetterAlphabet\n()),\n \nid\n=\n'gi|2765658|emb|Z78533.1|CIZ78533'\n,\n \nname\n=\n'gi|2765658|emb|Z78533.1|CIZ78533'\n,\n \ndescription\n=\n'gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA'\n,\n \ndbxrefs\n=\n[])\n\n\n>>>\n \n\"GAATTC\"\n \nin\n \nrecord\n\n\nFalse\n\n\n\n\n\nSequence files as Dictionaries - In memory\n\u00b6\n\n\nfrom\n \nBio\n \nimport\n \nSeqIO\n\n\norchid_dict\n \n=\n \nSeqIO\n.\nto_dict\n(\nSeqIO\n.\nparse\n(\n\"ls_orchid.gbk\"\n,\n \n\"genbank\"\n))\n\n\nprint\n(\norchid_dict\n.\nkeys\n())\n\n\nprint\n(\norchid_dict\n.\nvalues\n())\n\n\n\n\n\n\n\nReasons to choose Bio.SeqIO.to_dict() over either Bio.SeqIO.index() or Bio.SeqIO.index_db() boil down to a need for flexibility despite its high memory needs.\n\n\n\n\nwrite\n\u00b6\n\n\nSeqIO\n.\nwrite\n()",
+            "title": "Biopython"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#working-with-sequence",
+            "text": "if you have a FASTA file  ls_orchid.fasta  >gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA\nCGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG\nAATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG\n...",
+            "title": "Working with sequence"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#reading-sequence-file",
+            "text": "from   Bio   import   SeqIO  for   seq_record   in   SeqIO . parse ( \"ls_orchid.fasta\" ,   \"fasta\" ): \n     print ( seq_record . id ) \n     print ( seq_record . name ) \n     print ( seq_record . description ) \n     print ( seq_record . features ) \n     print ( repr ( seq_record . seq ))   #repr() \u51fd\u6570\u5c06\u5bf9\u8c61\u8f6c\u5316\u4e3a\u4f9b\u89e3\u91ca\u5668\u8bfb\u53d6\u7684\u5f62\u5f0f\u3002 \n     print ( len ( seq_record ))",
+            "title": "reading sequence file"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#seqioparse-return-a-iterator",
+            "text": "record_iterator   =   SeqIO . parse ( \"ls_orchid.fasta\" ,   \"fasta\" )  record   =   record_iterator . next ()",
+            "title": "SeqIO.parse return a iterator"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#getting-a-list-of-the-records-in-a-sequence-file",
+            "text": "from   Bio   import   SeqIO  records   =   list ( SeqIO . parse ( \"ls_orchid.gbk\" ,   \"genbank\" ))  print ( \"Found  %i  records\" . format ( len ( records ))  print   \"The last record\"  last_record   =   records [ - 1 ]   #using Python's list tricks",
+            "title": "Getting a list of the records in a sequence file"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#see-also-seqioread",
+            "text": "from   Bio   import   SeqIO  record   =   SeqIO . read ( \"ls_orchid.fasta\" ,   \"fasta\" )  >>>   record  SeqRecord ( seq = Seq ( 'CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGG...GGG' ,   SingleLetterAlphabet ()),   id = 'gi|2765658|emb|Z78533.1|CIZ78533' ,   name = 'gi|2765658|emb|Z78533.1|CIZ78533' ,   description = 'gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA' ,   dbxrefs = [])  >>>   \"GAATTC\"   in   record  False",
+            "title": "See also SeqIO.read:"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#sequence-files-as-dictionaries-in-memory",
+            "text": "from   Bio   import   SeqIO  orchid_dict   =   SeqIO . to_dict ( SeqIO . parse ( \"ls_orchid.gbk\" ,   \"genbank\" ))  print ( orchid_dict . keys ())  print ( orchid_dict . values ())    Reasons to choose Bio.SeqIO.to_dict() over either Bio.SeqIO.index() or Bio.SeqIO.index_db() boil down to a need for flexibility despite its high memory needs.",
+            "title": "Sequence files as Dictionaries - In memory"
+        },
+        {
+            "location": "/notesmd/programing/biopython/#write",
+            "text": "SeqIO . write ()",
+            "title": "write"
+        },
+        {
+            "location": "/notesmd/programing/linux/",
+            "text": "shell\n\u00b6\n\n\n\n\n\n\ncheck server type \ncurl -I www.baidu.com\n\n\n\n\n\n\n\u5207\u7247 \nsed -n '5,$p'\n\n\n\n\n\n\n\u7981\u6b62\u4e2a\u522b\u7528\u6237\u767b\u5f55\n\npasswd -l test #\u4f7f\u7528-l\u6307\u4ee4\u5c06user1\u9501\u5b9a\uff0c\u8fd9\u6837\u5c31\u4e0d\u80fd\u767b\u5f55\u4e86\uff0c\u4f46\u662f\u53ef\u4ee5\u4eceroot\u8d26\u6237\u5207\u6362\u5230user1\u7528\u6237\npasswd -S user1 # -S\u8868\u793a\u67e5\u770b\u7528\u6237test\u7684\u72b6\u6001\npasswd -u user1 #-u\u53ef\u4ee5\u5c06\u9501\u5b9a\u7684\u7528\u6237\u5bc6\u7801\u89e3\u9664\n\n\n\n\n\n\n\n\u67e5\u770b\u5f53\u524d\u7528\u6237\u767b\u5f55\u60c5\u51b5 \nw\n\n\n\n\n\n\n\u770b\u6709\u54ea\u4e9b\u7a0b\u5e8f\u5360\u7528CPU\uff0c\ntop + H\n\n\n\n\n\n\n\u5220\u9664\u7528\u6237 \nsudo userdel -f test #\u4e3a\u4e86\u5728\u5220\u9664\u7528\u6237\u65f6\u5b8c\u5168\u5220\u9664\u5bb6\u76ee\u5f55\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528 -r \u9009\u9879\u3002\u8fd9\u4e2a\u9009\u9879\u540c\u6837\u4f1a\u5220\u9664\u7528\u6237\u7684\u90ae\u4ef6\u6c60\uff0c\u5982\u679c\u5b58\u5728\u7684\u8bdd\u3002\n\n\n\n\n\n\n\u9488\u5bf9\u8fd9\u4e2a\u5168\u57fa\u56e0\u7ec4\u4f4d\u70b9\u7684\u7edf\u8ba1\u7ed3\u679c\uff0c\u6211\u4eec\u5f88\u5bb9\u6613\u5199\u811a\u672c\u6765\u8ba1\u7b97\u6bcf\u6761\u5e73\u5747\u7684\u6d4b\u5e8f\u6df1\u5ea6\u548c\u5404\u4e2a\u67d3\u8272\u4f53\u7684\u8986\u76d6\u5ea6\u3002\n\nnohup time samtools mpileup P_jmzeng.final.bam |perl -alne '{$pos{$F[0]}++;$depth{$F[0]}+=$F[3]} END{print \"$_\\t$pos{$_}\\t$depth{$_}\" foreach sort keys %pos}' 1>coverage_depth.txt 2>coverage_depth.log &\n\n\n\n\n\n\n\n\u7528\u7ec8\u7aef\u770b\u7535\u5f71\n\u00b6\n\n\nbrew install mplayer \n# mac\n\nmplayer -vo caca your_moive.name\n\n\n\n\n\u670d\u52a1\u5668\n\u00b6\n\n\n\n\nUbuntu Apache\n\n\nrestart service \nsudo /etc/init.d/apache2 restart\n\n\nconf file path \nsudo vi /etc/apache2/apache2.conf\n\n\n\n\n\n\n\n\nlsb_release -a \u67e5\u770bubuntu\u7248\u672c\nuname -a \u67e5\u770blinux\u770b\u7cfb\u7edf\u662f\u591a\u5c11\u4f4d\u7684",
+            "title": "Linux"
+        },
+        {
+            "location": "/notesmd/programing/linux/#shell",
+            "text": "check server type  curl -I www.baidu.com    \u5207\u7247  sed -n '5,$p'    \u7981\u6b62\u4e2a\u522b\u7528\u6237\u767b\u5f55 passwd -l test #\u4f7f\u7528-l\u6307\u4ee4\u5c06user1\u9501\u5b9a\uff0c\u8fd9\u6837\u5c31\u4e0d\u80fd\u767b\u5f55\u4e86\uff0c\u4f46\u662f\u53ef\u4ee5\u4eceroot\u8d26\u6237\u5207\u6362\u5230user1\u7528\u6237\npasswd -S user1 # -S\u8868\u793a\u67e5\u770b\u7528\u6237test\u7684\u72b6\u6001\npasswd -u user1 #-u\u53ef\u4ee5\u5c06\u9501\u5b9a\u7684\u7528\u6237\u5bc6\u7801\u89e3\u9664    \u67e5\u770b\u5f53\u524d\u7528\u6237\u767b\u5f55\u60c5\u51b5  w    \u770b\u6709\u54ea\u4e9b\u7a0b\u5e8f\u5360\u7528CPU\uff0c top + H    \u5220\u9664\u7528\u6237  sudo userdel -f test #\u4e3a\u4e86\u5728\u5220\u9664\u7528\u6237\u65f6\u5b8c\u5168\u5220\u9664\u5bb6\u76ee\u5f55\uff0c\u6211\u4eec\u53ef\u4ee5\u4f7f\u7528 -r \u9009\u9879\u3002\u8fd9\u4e2a\u9009\u9879\u540c\u6837\u4f1a\u5220\u9664\u7528\u6237\u7684\u90ae\u4ef6\u6c60\uff0c\u5982\u679c\u5b58\u5728\u7684\u8bdd\u3002    \u9488\u5bf9\u8fd9\u4e2a\u5168\u57fa\u56e0\u7ec4\u4f4d\u70b9\u7684\u7edf\u8ba1\u7ed3\u679c\uff0c\u6211\u4eec\u5f88\u5bb9\u6613\u5199\u811a\u672c\u6765\u8ba1\u7b97\u6bcf\u6761\u5e73\u5747\u7684\u6d4b\u5e8f\u6df1\u5ea6\u548c\u5404\u4e2a\u67d3\u8272\u4f53\u7684\u8986\u76d6\u5ea6\u3002 nohup time samtools mpileup P_jmzeng.final.bam |perl -alne '{$pos{$F[0]}++;$depth{$F[0]}+=$F[3]} END{print \"$_\\t$pos{$_}\\t$depth{$_}\" foreach sort keys %pos}' 1>coverage_depth.txt 2>coverage_depth.log &",
+            "title": "shell"
+        },
+        {
+            "location": "/notesmd/programing/linux/#_1",
+            "text": "brew install mplayer  # mac \nmplayer -vo caca your_moive.name",
+            "title": "\u7528\u7ec8\u7aef\u770b\u7535\u5f71"
+        },
+        {
+            "location": "/notesmd/programing/linux/#_2",
+            "text": "Ubuntu Apache  restart service  sudo /etc/init.d/apache2 restart  conf file path  sudo vi /etc/apache2/apache2.conf     lsb_release -a \u67e5\u770bubuntu\u7248\u672c\nuname -a \u67e5\u770blinux\u770b\u7cfb\u7edf\u662f\u591a\u5c11\u4f4d\u7684",
+            "title": "\u670d\u52a1\u5668"
+        },
+        {
+            "location": "/notesmd/programing/django/",
+            "text": "django \u7684\u4f7f\u7528\n\u00b6\n\n\ndjango web\u5f00\u53d1\u975e\u5e38\u654f\u6377\n\u00b6\n\n\n\n\n\n\npython3\u6709\u975e\u5e38\u591a\u5f88\u597d\u7684\u5e93\uff0c\u6bd4\u5982biopython, beautiful soap, pandas, numpy, matplotlib\n\n\n\n\n\n\npython3\u672c\u8eab\u7684\u51fd\u6570\u7528\u8d77\u6765\u5f88\u65b9\u4fbf\uff0c\u8bed\u8a00\u4f18\u7f8e\n\n\n\n\n\n\npython3\u6709\u5f88\u597d\u7684ide\uff0c\u6bd4\u5982anocanda\u4e2d\u96c6\u6210\u7684spyder\n\n\n\n\n\n\ndjango url\n\u00b6\n\n\nview \u4e2d\u83b7\u53d6\u53c2\u6570\u7684\u65b9\u6cd5\n\u00b6\n\n\nform\n\u00b6\n\n\nview\u4e2d\u4f7f\u7528\u81ea\u5df1\u5b9a\u4e49\u7684\u7c7b\u548c\u51fd\u6570\n\u00b6\n\n\ndjango\u5bfc\u5165\u6570\u636e\n\u00b6\n\n\n# managy.py \u6240\u5728\u7684\u76ee\u5f55\ndjango_path = \"F:\\\\django\\\\try-django-19-master\\\\src\"\n\nos.chdir(django_path) # \u5207\u6362\u76ee\u5f55\n\nos.getcwd() # \u83b7\u53d6\u5f53\u524d\u76ee\u5f55\n\n# run manage.py\n# \u8fd9\u53e5\u8bdd\u8fd8\u4e0d\u61c2\u554a\nos.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"trydjango19.settings\")\n\nfrom django.core.management import execute_from_command_line\n\nexecute_from_command_line(sys.argv)\n\nfrom posts.models import Post\n\n\n\n\nDjango shell\n\u00b6\n\n\n\u8fd9\u4e2a\u6559\u7a0b\u8fd8\u4e0d\u9519\nziqiangxuetang\n\n\u6253\u5f00\u4f60\u672c\u5730\u7684\u7ec8\u7aef(\u4e0d\u662f\u5728Python\u89e3\u6790\u5668\u91cc\u9762) \u7136\u540e\u8f93\u5165\u8fd9\u4e2a\u547d\u4ee4:\n\npython manage.py shell\n\n\n\u6570\u636e\u5e93\u8fc1\u79fb\u548c\u66f4\u65b0\u9047\u5230\u7684\u95ee\u9898\n1. \u6e05\u9664\u6570\u636e\u5e93\u4e2d\u6240\u6709\u7684\u4fe1\u606f, \u53ea\u4fdd\u7559\u8868\u7684\u7ed3\u6784, \npython manage.py flush\n\n2. \u6dfb\u52a0\u8d85\u7ea7\u7528\u6237: \npython manage.py createsuperuser\n\n3. \u5982\u679c\u6570\u636e\u5e93\u4e2d\u6709\u8868\u4e14\u6709\u6570\u636e\u7684\u8bdd, \u4fee\u6539model\u4e4b\u540e\u518d\u67e5\u8be2\u6570\u636e\u4f1a\u51fa\u9519, \u53ef\u4ee5\u56de\u5230\u7b2c\u4e00\u6b65\u5148\u5220\u9664\u6570\u636e\n4. \u66f4\u65b0model\u7684\u65b9\u6cd5\uff1a\npython manage.py makemigrations\n\u7136\u540e\npython manage.py migrate\n\n\nuwsgi\n\u00b6\n\n\nuwsgi --ini /etc/uwsgi9090.ini\nuwsgi --stop /etc/uwsgi9090.ini\n\n\n\u7f13\u5b58\n\u00b6\n\n\nvi trydjango19/settings.py",
+            "title": "Django"
+        },
+        {
+            "location": "/notesmd/programing/django/#django",
+            "text": "",
+            "title": "django \u7684\u4f7f\u7528"
+        },
+        {
+            "location": "/notesmd/programing/django/#django-web",
+            "text": "python3\u6709\u975e\u5e38\u591a\u5f88\u597d\u7684\u5e93\uff0c\u6bd4\u5982biopython, beautiful soap, pandas, numpy, matplotlib    python3\u672c\u8eab\u7684\u51fd\u6570\u7528\u8d77\u6765\u5f88\u65b9\u4fbf\uff0c\u8bed\u8a00\u4f18\u7f8e    python3\u6709\u5f88\u597d\u7684ide\uff0c\u6bd4\u5982anocanda\u4e2d\u96c6\u6210\u7684spyder",
+            "title": "django web\u5f00\u53d1\u975e\u5e38\u654f\u6377"
+        },
+        {
+            "location": "/notesmd/programing/django/#django-url",
+            "text": "",
+            "title": "django url"
+        },
+        {
+            "location": "/notesmd/programing/django/#view",
+            "text": "",
+            "title": "view \u4e2d\u83b7\u53d6\u53c2\u6570\u7684\u65b9\u6cd5"
+        },
+        {
+            "location": "/notesmd/programing/django/#form",
+            "text": "",
+            "title": "form"
+        },
+        {
+            "location": "/notesmd/programing/django/#view_1",
+            "text": "",
+            "title": "view\u4e2d\u4f7f\u7528\u81ea\u5df1\u5b9a\u4e49\u7684\u7c7b\u548c\u51fd\u6570"
+        },
+        {
+            "location": "/notesmd/programing/django/#django_1",
+            "text": "# managy.py \u6240\u5728\u7684\u76ee\u5f55\ndjango_path = \"F:\\\\django\\\\try-django-19-master\\\\src\"\n\nos.chdir(django_path) # \u5207\u6362\u76ee\u5f55\n\nos.getcwd() # \u83b7\u53d6\u5f53\u524d\u76ee\u5f55\n\n# run manage.py\n# \u8fd9\u53e5\u8bdd\u8fd8\u4e0d\u61c2\u554a\nos.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"trydjango19.settings\")\n\nfrom django.core.management import execute_from_command_line\n\nexecute_from_command_line(sys.argv)\n\nfrom posts.models import Post",
+            "title": "django\u5bfc\u5165\u6570\u636e"
+        },
+        {
+            "location": "/notesmd/programing/django/#django-shell",
+            "text": "\u8fd9\u4e2a\u6559\u7a0b\u8fd8\u4e0d\u9519 ziqiangxuetang \n\u6253\u5f00\u4f60\u672c\u5730\u7684\u7ec8\u7aef(\u4e0d\u662f\u5728Python\u89e3\u6790\u5668\u91cc\u9762) \u7136\u540e\u8f93\u5165\u8fd9\u4e2a\u547d\u4ee4: python manage.py shell  \u6570\u636e\u5e93\u8fc1\u79fb\u548c\u66f4\u65b0\u9047\u5230\u7684\u95ee\u9898\n1. \u6e05\u9664\u6570\u636e\u5e93\u4e2d\u6240\u6709\u7684\u4fe1\u606f, \u53ea\u4fdd\u7559\u8868\u7684\u7ed3\u6784,  python manage.py flush \n2. \u6dfb\u52a0\u8d85\u7ea7\u7528\u6237:  python manage.py createsuperuser \n3. \u5982\u679c\u6570\u636e\u5e93\u4e2d\u6709\u8868\u4e14\u6709\u6570\u636e\u7684\u8bdd, \u4fee\u6539model\u4e4b\u540e\u518d\u67e5\u8be2\u6570\u636e\u4f1a\u51fa\u9519, \u53ef\u4ee5\u56de\u5230\u7b2c\u4e00\u6b65\u5148\u5220\u9664\u6570\u636e\n4. \u66f4\u65b0model\u7684\u65b9\u6cd5\uff1a python manage.py makemigrations \u7136\u540e python manage.py migrate",
+            "title": "Django shell"
+        },
+        {
+            "location": "/notesmd/programing/django/#uwsgi",
+            "text": "uwsgi --ini /etc/uwsgi9090.ini\nuwsgi --stop /etc/uwsgi9090.ini",
+            "title": "uwsgi"
+        },
+        {
+            "location": "/notesmd/programing/django/#_1",
+            "text": "vi trydjango19/settings.py",
+            "title": "\u7f13\u5b58"
+        },
+        {
+            "location": "/notesmd/programing/perl/",
+            "text": "perl\n\u00b6\n\n\n\u6570\u7ec4\n\u00b6\n\n\nmy\n \n@arr\n \n=\n \n();\n \n# \u5b9a\u4e49\u6570\u7ec4\n\n\npush\n \n@arr\n,\n\"item1\"\n;\n \n# \u538b\u5165\u6570\u7ec4\u6700\u540e\n\n\npop\n \n\u5f39\u51fa\u5143\u7d20\n\n\nshift\n \n\u5de6\u8fb9\u5f39\u51fa\u5143\u7d20\n\n\nunshift\n \n\u5de6\u8fb9\u538b\u5165\u5143\u7d20\n\n\n\n\n\nhash\u54c8\u5e0c\n\u00b6\n\n\nmy\n \n%hash\n \n=\n \n(\n\n    \n\"key1\"\n \n=>\n \n[\n'a'\n,\n \n'b'\n],\n \n# \u54c8\u5e0c\u7684\u6570\u7ec4\n\n    \n\"key2\"\n \n=>\n \n\"item\"\n,\n\n    \n\"key3\"\n \n=>\n \n(\n           \n# \u4e8c\u7ef4\u54c8\u5e0c\n\n        \n'kkey1'\n \n=>\n \n[\n1\n,\n \n2\n \n,\n3\n],\n\n        \n'kkey2'\n \n=>\n \n[\n1\n,\n \n2\n]\n\n        \n)\n\n    \n);\n\n\n\n# \u904d\u5386\u54c8\u5e0c, \u5bf9key, value\u6392\u5e8f\n\n\nforeach\n \nmy\n \n$key\n \n(\nsort\n{\n$a\n \ncmp\n \n$b\n}\n \nkeys\n \n%hash\n)\n\n\n{\n\n    \n# \u6309key\u503c\u5b57\u7b26\u6392\u5e8f\n\n\n}\n\n\nforeach\n \nmy\n \n$key\n \n(\nsort\n{\n$a\n \n<=>\n \n$b\n}\n \nkeys\n \n%hash\n)\n\n\n{\n\n    \n# \u6309key\u503c\u6570\u5b57\u6392\u5e8f\n\n\n}\n\n\nforeach\n \nmy\n \n$key\n \n(\nsort\n{\n$hash\n{\n$a\n}\n \n<=>\n \n$hash\n{\n$b\n}}\n \nkeys\n \n%hash\n)\n\n\n{\n\n    \n# \u6309value\u503c\u6570\u5b57\u6392\u5e8f\n\n\n}\n\n\n\n\n\nperl\u5355\u884c\u6267\u884c\n\u00b6\n\n\n\u5224\u65ad\u6587\u4ef6\u662f\u5426\u4e3a\u7a7a\uff0c\u662f\u5426\u5b58\u5728\n\u00b6\n\n\n\n\n\u5224\u65ad\u6587\u4ef6\u662f\u5426\u5b58\u5728 \nif(-e $file_path){print \"yes\";}else{print \"NO\";}\n\n\n\u5224\u65ad\u6587\u4ef6\u662f\u5426\u4e3a\u7a7a \nif((stat $file_path)[7]){print \"yes\";}else{print \"NO\";}",
+            "title": "Perl"
+        },
+        {
+            "location": "/notesmd/programing/perl/#perl",
+            "text": "",
+            "title": "perl"
+        },
+        {
+            "location": "/notesmd/programing/perl/#_1",
+            "text": "my   @arr   =   ();   # \u5b9a\u4e49\u6570\u7ec4  push   @arr , \"item1\" ;   # \u538b\u5165\u6570\u7ec4\u6700\u540e  pop   \u5f39\u51fa\u5143\u7d20  shift   \u5de6\u8fb9\u5f39\u51fa\u5143\u7d20  unshift   \u5de6\u8fb9\u538b\u5165\u5143\u7d20",
+            "title": "\u6570\u7ec4"
+        },
+        {
+            "location": "/notesmd/programing/perl/#hash",
+            "text": "my   %hash   =   ( \n     \"key1\"   =>   [ 'a' ,   'b' ],   # \u54c8\u5e0c\u7684\u6570\u7ec4 \n     \"key2\"   =>   \"item\" , \n     \"key3\"   =>   (             # \u4e8c\u7ef4\u54c8\u5e0c \n         'kkey1'   =>   [ 1 ,   2   , 3 ], \n         'kkey2'   =>   [ 1 ,   2 ] \n         ) \n     );  # \u904d\u5386\u54c8\u5e0c, \u5bf9key, value\u6392\u5e8f  foreach   my   $key   ( sort { $a   cmp   $b }   keys   %hash )  { \n     # \u6309key\u503c\u5b57\u7b26\u6392\u5e8f  }  foreach   my   $key   ( sort { $a   <=>   $b }   keys   %hash )  { \n     # \u6309key\u503c\u6570\u5b57\u6392\u5e8f  }  foreach   my   $key   ( sort { $hash { $a }   <=>   $hash { $b }}   keys   %hash )  { \n     # \u6309value\u503c\u6570\u5b57\u6392\u5e8f  }",
+            "title": "hash\u54c8\u5e0c"
+        },
+        {
+            "location": "/notesmd/programing/perl/#perl_1",
+            "text": "",
+            "title": "perl\u5355\u884c\u6267\u884c"
+        },
+        {
+            "location": "/notesmd/programing/perl/#_2",
+            "text": "\u5224\u65ad\u6587\u4ef6\u662f\u5426\u5b58\u5728  if(-e $file_path){print \"yes\";}else{print \"NO\";}  \u5224\u65ad\u6587\u4ef6\u662f\u5426\u4e3a\u7a7a  if((stat $file_path)[7]){print \"yes\";}else{print \"NO\";}",
+            "title": "\u5224\u65ad\u6587\u4ef6\u662f\u5426\u4e3a\u7a7a\uff0c\u662f\u5426\u5b58\u5728"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/",
+            "text": "Bioinformatics\n\u00b6\n\n\n\n\n\n\n\n\nTable of Contents\n\n\n\n\nBioinformatician\n\n\nBioinformatics\n\n\n\u751f\u7269\u4fe1\u606f\u6742\u8c08\n\n\nTalks\n\n\nOnline courses\n\n\nComprehensive packages\n\n\nGeneral file formats\n\n\nbam/sam/tabix/bgzf\n\n\nFasta/q\n\n\nGFF/BED/VCF\n\n\nOthers formats\n\n\nDatabase API\n\n\ndata structure\n\n\nModels\n\n\nScripts\n\n\nVisualization\n\n\nCircos Related\n\n\nOthers\n\n\n\n\n\n\nKmer\n\n\nPhylogenetic tree\n\n\nTaxonomy\n\n\nAssembly\n\n\nAlignment\n\n\nMultiple Alignment\n\n\nMapping\n\n\nBacterial comparative genomics\n\n\nMetagenomics\n\n\n16S\n\n\nClassifier | removing human reads\n\n\nVirome\n\n\nChip-seq\n\n\nPlastform\n\n\nPCR\n\n\nHPC\n\n\n\n\n\n\n\nBioinformatician\n\u00b6\n\n\n\n\nWhat is a bioinformatician\n\n\nBenjamin Franklin Award for Open Access in the Life Sciences\n\n\nMy Formula as a Bioinformatician\n\n\nSo you want to be a computational biologist?\n\u00a0\u2606\n\n\nBioinformatics is not something you are taught, it\u2019s a way of life\n\n\nBioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies\n\n\nTop N Reasons To Do A Ph.D. or Post-Doc in Bioinformatics/Computational Biology\n\n\n101 Questions: a new series of interviews with notable bioinformaticians\n\n\n\u751f\u7269\u4fe1\u606f\u5b66\u5bb6\u7ea7\u522b\n\u00a0\nLevels of Bioinformatics Research\n\n\nIt\u2019s time to reboot bioinformatics education\n\n\nAn Explosion Of Bioinformatics Careers\n\n\nIs going back to the wet lab worth it?\n\n\n\n\nSocial media\n\n\n\n\nStaying Current in Bioinformatics & Genomics: 2017 Edition\n\n\nInteresting bioinformatics blogs (2017 edition)\n\n\n\n\nProgramming skills\n\n\n\n\nAn Introduction to Programming for Bioscientists: A Python-Based Primer\n\n\nYou can code, too!\n\n\n\n\nBioinformatics\n\u00b6\n\n\n\n\nThe Phylogeny of Everything, the Origin of Eukaryotes, and the Rules of Taxonomy: Death to Archaea, Bacteria, and Eucarya! Long live Archaebacteria, Eubacteria, Eukaryota, and Prokaryota!\n\n\nCrossroads (iii) \u2013 a New Direction for Bioinformatics with Twelve Fundamental Problems\n\n\nTen Simple Rules for Effective Computational Research\n\uff08\n\u9ad8\u6548\u8ba1\u7b97\u79d1\u5b66\u7814\u7a76\u7684\u5341\u6761\u7b80\u5355\u89c4\u5219\n\uff09\n\n\nTen Simple Rules for Reproducible Computational Research\n\n\nTen Simple Rules for the Care and Feeding of Scientific Data\n\n\nAn Introduction To Applied Bioinformatics\n\n\nFreedom in bioinformatics\n\n\n\u4e8c\u4ee3\u6d4b\u5e8f\u6570\u636e\u8fa8\uff08\u4e4b\u4e00\uff09\uff1aClean Data\n\n\n\u75c5\u539f\u5fae\u751f\u7269\u9ad8\u901a\u91cf\u6d4b\u5e8f\u6570\u636e\u5206\u6790\u7b14\u8bb0\n\n\nWhat to do with lots of (sequencing) data\n\n\nThe myths of bioinformatics software\n\n\nGood Habit for Bioinformatics Analyst or Scientist\n\n\nWhat Are The Most Common Stupid Mistakes In Bioinformatics?\n\n\n\n\n\u751f\u7269\u4fe1\u606f\u6742\u8c08\n\u00b6\n\n\n\n\n\u300a\u5b66\u751f\u7269\u7684\uff0c\u4e0d\u4f1a\u7f16\u7a0b\uff0c\u4e5f\u53ef\u4ee5\u62a5\u8003\u751f\u7269\u4fe1\u606f\u5b66\u7684\u7814\u7a76\u751f\u300b\nby\u00a0\n\u725b\u767b\u79d1\n\u3002\uff08\u5b66\u751f\u7269\u7684\uff0c\u4e0d\u4f1a\u7f16\u7a0b\uff0c\u4e5f\u80fd\u5b66\u751f\u7269\u4fe1\u606f\u5b66\u6280\u672f\uff09\n\n\n\u300a\n\u9ad8\u901a\u91cf\u6d4b\u5e8f\u80fd\u66ff\u4ee3PCR\u5417\uff1f\n\u300b\u00a0by \n\u97e9\u5efa\n\n\n\u300a\u751f\u7269\u4fe1\u606f\u5b66\u6570\u636e\u5206\u6790\u4e0e\u7687\u5e1d\u7684\u65b0\u88c5\u300b\n\n\n\u4e2a\u6027\u5316\u533b\u7597\u4f1a\u5e26\u6765\u66f4\u6602\u8d35\u7684\u836f\u7269\uff1f\n\n\n\u9ad8\u901a\u91cf\u6d4b\u5e8f\u516c\u53f8\u9760\u4ec0\u4e48\u8d5a\u94b1\uff1f\n\n\n\u751f\u7269\u4e0d\u9000\u5b66\u6307\u5357\uff1a\u6559\u4f60\u5982\u4f55\u9760\u751f\u7269\u517b\u5bb6\u7cca\u53e3\n\u00a0\uff08\u60f3\u8fdb\u5165\u751f\u7269\u5b66\u9886\u57df\u7684\u8bf7\u770b\uff09\n\n\n\n\nTalks\n\u00b6\n\n\n\n\nHow NGS is transforming medicine\n\n\n\n\nOnline courses\n\u00b6\n\n\n\n\nRosalind\n\u00a0(Rosalind is a platform for learning bioinformatics through problem solving)\n\n\nTeaching Materials of Langmead-lab\n\n\n\n\nComprehensive packages\n\u00b6\n\n\n\n\n[python] \nBiopython\n\n\n[golang] \nBiogo\n\n\n[golang] \nbio\n - A simple but high-performance bioinformatics package in Go\n\n\n\n\nGeneral file formats\n\u00b6\n\n\n\n\nzindex\n -\u00a0Create an index on a compressed text file\n\n\ntabix\n\u00a0 - table file index\n\n\nwormtable\n\u00a0-\u00a0Write-once-read-many table for large datasets.\n\n\n\n\nbam/sam/tabix/bgzf\n\u00b6\n\n\n\n\n[python]\u00a0\nhts-python\n\u00a0-\u00a0pythonic wrapper for libhts\n\n\n[python] \nhtseq\n - HTSeq is a Python library to facilitate processing and analysis of data from high-throughput sequencing (HTS) experiments. \nhttp://www-huber.embl.de/users/anders/HTSeq/\n\n\n[golang]\u00a0\nbiogo/hts\n\n\nbamtools\n -\u00a0C++ API & command-line toolkit for working with BAM data\n\n\nsamblaster\n\u00a0- \u00a0a tool to mark duplicates and extract discordant and split reads from sam files.\n\n\n[python] \npysamstats\n - A fast Python and command-line utility for extracting simple statistics against genome positions based on sequence alignments from a SAM or BAM file.\n\n\n[python]\u00a0\npysam\n -\u00a0a python module for reading and manipulating Samfiles. It's a lightweight wrapper of the samtools C-API. Pysam also includes an interface for tabix. Another sam parser:\u00a0\nsimplesam\n\n\ngrabix\n - a wee tool for random access into BGZF files\n\n\n[golang]\u00a0\u00a0\nbix\n\u00a0-\u00a0tabix file access with golang using biogo machinery\n\n\nmergesam\n - Automate common sam & bam conversions\n\n\nSAMstat\n - Displaying sequence statistics for next generation sequencing\n\n\n\n\nFasta/q\n\u00b6\n\n\n\n\nseqtk\n\u00a0-\u00a0Toolkit for processing sequences in FASTA/Q formats\n\n\nseqkit\n - A cross-platform and efficient toolkit for FASTA/Q file manipulation \nhttp://bioinf.shenwei.me/seqkit\n\n\n[python]\u00a0\npyfaidx\n\u00a0-\u00a0pyfaidx: efficient pythonic random access to fasta subsequences\n\n\n[golang] \nbio\n - A lightweight and high-performance bioinformatics package in Go\n\n\n\n\nFASTA index\n\n\n\n\n[golang]\u00a0\nfaidx\n\n\n[golang] \nbio/seqio/fai\n\n\n\n\nGFF/BED/VCF\n\u00b6\n\n\n\n\nbedtools2\n\u00a0-\u00a0A powerful toolset for genome arithmetic.\n\n\nBEDOPS\n - the fast, highly scalable and easily-parallelizable genome analysis toolkit\n\n\n[python]\u00a0\ngffutils\n -\u00a0GFF and GTF file manipulation and interconversion\n\n\n[python]\u00a0\npybedtools\n\u00a0-\u00a0Python wrapper for Aaron Quinlan's BEDTools\n\n\n[golang]\u00a0\nirelate\n\u00a0-\u00a0Streaming relation (overlap, distance, KNN) of (any number of) sorted genomic interval sets. #golang\n\n\n[golang]\u00a0\nvcfgo\n\u00a0-\u00a0a golang library to read, write and manipulate files in the variant call format.\n\n\nvcflib\n - a simple C++ library for parsing and manipulating VCF files, + many command-line utilities \n\n\n\n\nOthers formats\n\u00b6\n\n\n\n\nblast_table2xml\n\u00a0-\u00a0Convert blast m6 format to xml for blast2go\n\n\nseqmagick\n - file format conversion in Biopython in a convenient way\n\n\n\n\nDatabase API\n\u00b6\n\n\n\n\npyensembl\n - Python interface to ensembl reference genome metadata (exons, transcripts, etc...)\n\n\n\n\ndata structure\n\u00b6\n\n\n\n\nkvector\n\u00a0-\u00a0kvector is a small utility for converting motifs to kmer vectors to compare motifs of different lengths\n\n\n\n\nModels\n\u00b6\n\n\n\n\npomegranate\n - Graphical models for Python, implemented in Cython for speed.\n\n\n\n\nScripts\n\u00b6\n\n\n\n\noneliners\n - Useful bash one-liners for bioinformatics.\n\n\ncgat\n\u00a0-\u00a0CGAT - Computational Genomics Analysis Tools\n\n\nbcbb\n\u00a0-\u00a0Incubator for useful bioinformatics code, primarily in Python and R\u00a0\nhttp://bcbio.wordpress.com\n\n\njcvi\n -\u00a0Python utility libraries on genome assembly, annotation and comparative genomics\n\n\npicobio\n\u00a0-\u00a0Miscellaneous Bioinformatics scripts etc mostly in Python\n\n\npydna\n\u00a0-\u00a0Classes and code for representing double stranded DNA and functions for simulating homologous recombination and Gibson assembly.\n\n\nBioUtils\n\u00a0-\u00a0Python scripts for miscellaneous bioinformatics stuff.\n\n\nsesbio\n\u00a0-\u00a0Bioinformatics scripts for genome analysis\n\n\nngsutils\n\u00a0-\u00a0Tools for next-generation sequencing analysis\u00a0\nhttp://ngsutils.org\n\n\nngsTools\n\u00a0-\u00a0Programs to analyse NGS data for population genetics purposes\n\n\n\n\nVisualization\n\u00b6\n\n\n\n\nCircleator\n\u00a0-\u00a0Flexible circular visualization of genome-associated data with BioPerl and SVG.\n\n\nComplexHeatmap\n\u00a0-\u00a0make complex heatmaps as well as self define annotation graphics\n\n\ndalliance\n\u00a0-\u00a0Interactive web-based genome browser. \nhttp://www.biodalliance.org/\n\n\nQuestion: Which program, tool, or strategy do you use to visualize genomic rearrangements?\n\u00a0\n\n\nDNAplotlib\n - DNA plotting library for Python\n\n\n\n\nCircos Related\n\u00b6\n\n\n\n\nCircos\n: Perl package for circular plots, which are well suited for genomic rearrangements.\n\n\nJ-Circos\n is a java application for doing interactive work with circos plots.\n\n\nClicO FS\n: an interactive web-based service of Circos.\n\n\nrCircos\n: R package for circular plots. [last update: 2013]\n\n\nOmicCircos\n: R package for circular plots for omics data.[last update: 2015-04]\n\n\n\n\nOthers\n\u00b6\n\n\n\n\nggbio\n: R package for visualizing biological data. Has a circular view similar to the previous packages.\n\n\nD3 chord diagrams\n\u00a0(javascript) can be used to visualize genomic rearrangements. \nSee this plot of migration flows\n as a similar example.\n\n\nGenomatix Transcriptome Viewer:\u00a0Gene Fusion analyses\n\n\niFUSE:\u00a0integrated fusion gene explorer\n\n\nFusionAnalyser: a new graphical, event-driven tool for fusion rearrangements discovery\n\n\nSOAPFuse includes the option to generate figures\n\n\nGremlin\n\n\nSeqeyes\n: A flash tool for visualizing structural variations.\n\n\nSVVIZ\n\u00a0-\u00a0A READ VISUALIZER TO VALIDATE STRUCTURAL VARIANTS\n\n\n\n\nKmer\n\u00b6\n\n\n\n\nkhmer\n - In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more \nhttp://khmer.readthedocs.org/\n\n\nJellyfish\n\n\n\n\nPhylogenetic tree\n\u00b6\n\n\n\n\n[R]\u00a0\nggtree\n -\u00a0a phylogenetic tree viewer for different types of tree annotations\n\n\n[python]\u00a0\nETE tools\n\n\nevolview\n\n\n\n\nTaxonomy\n\u00b6\n\n\n\n\nNCBI_taxonomy_tree\n - NCBI taxonomy tree in-memory mapping\n\n\ntaxiphy\n - Common repository for scripts to generate trees from taxonomies. Currently includes ITIS, NCBI, and GBIF.\n\n\ngtaxon\n - A fast cross-platform NCBI taxonomy data querying (gi2taxid, taxid2taxon, name2taxid, LCA) tool, with cmd client and REST API server for both local and remote server. \n\n\n[R] \ntaxize\n - A taxonomic toolbelt for R \nhttp://ropensci.org/tutorials/taxize.html\n\n\nTaxonKit\n - Cross-platform and Efficient NCBI Taxonomy Toolkit \nhttp://bioinf.shenwei.me/taxonkit/\n\n\n\n\nAssembly\n\u00b6\n\n\n\n\nBandage\n\u00a0-\u00a0a Bioinformatics Application for Navigating De novo Assembly Graphs Easily\n\n\nnucleotid.es\n\u00a0-\u00a0an assembler catalogue\n\n\n\n\nAlignment\n\u00b6\n\n\n\n\nhpg-aligner\n\u00a0-\u00a0HPG Aligner is an ultrafast and highly sensitive Next-Generation Sequencing (NGS) mapper which supoprts both DNA and RNA alignment\n\n\nAliView\n\u00a0-\u00a0Software for aligning viewing and editing dna/aminoacid sequences, intuitive, fast and lightweight. Download and website:\u00a0\nhttp://www.ormbunkar.se/aliview\n\n\n\n\nMultiple Alignment\n\u00b6\n\n\n\n\nmsa: An R Package for Multiple Sequence Alignment\n\n\n\n\nMapping\n\u00b6\n\n\nBacterial comparative genomics\n\u00b6\n\n\n\n\nTOOLS FOR BACTERIAL COMPARATIVE GENOMICS\n\n\n\n\nMetagenomics\n\u00b6\n\n\n\n\nshotmap\n\u00a0-\u00a0A Shotgun Metagenome Annotation Pipeline\n\n\nmetagenomeSeq\n\u00a0-\u00a0Statistical analysis for sparse high-throughput sequencing\n\n\nmmgenome\n\u00a0-\u00a0Tools for extracting individual genomes from metagneomes\n\n\nharvest\n\u00a0-\u00a0suite of core-genome alignment and visualization tools for quickly analyzing thousands of intraspecific microbial genomes.\n\n\nPhyloSift\n\u00a0-\u00a0Phylogenetic and taxonomic analysis for genomes and metagenomes\n\n\nMetaQuery: Annotation and quantitative analysis of genes in the human gut microbiome\n\n\n\n\n16S\n\u00b6\n\n\n\n\n\u9ad8\u901a\u91cf\u6570\u636e\u5904\u7406\u7684\u4e00\u4e9b\u7ecf\u9a8c\u548c\u5efa\u8bae\n\n\nHow to choose ordination method, such as PCA, CA, PCoA, and NMDS?\n\n\n\n\nClassifier | removing human reads\n\u00b6\n\n\n\n\ntaxonomer.iobio\n - Taxonomer is a kmer-based ultrafast metagenomics tool for assigning taxonomy to sequencing reads from both clinical and environmental samples.\n\n\nBMTagger\n - Best Match Tagger for removing human reads from metagenomics datasets \npaper\n,\nsop\n\n\nCentrifuge\n - Classifier for metagenomic sequences\n\n\n\n\nVirome\n\u00b6\n\n\n\n\nviral-ngs\n - Viral genomics analysis pipelines\n\n\n\n\nChip-seq\n\u00b6\n\n\n\n\nChIP-seq-analysis\n\n\n\n\nPlastform\n\u00b6\n\n\n\n\nRabix\n\u00a0-\u00a0Portable Bioinformatics Pipelines\n\n\nbioboxes\n -\u00a0Standards for Interchangeable Bioinformatics Containers\n\n\nAnvi\u2019o\n is an analysis and visualization platform for \u2018omics data. \nintroduction\n\n\n\n\nPCR\n\u00b6\n\n\n\n\nfind_differential_primers\n\u00a0-\u00a0Scripts to aid the design of differential primers for diagnostic PCR.\n\n\nPrimer3-py\n - Primer3-py is a Python-abstracted API for the popular Primer3 library. The intention is to provide a simple and reliable interface for automated oligo analysis and design.\n\n\n\n\nHPC\n\u00b6\n\n\n\n\nhpcgo\n\u00a0-\u00a0Helping submit jobs to HPC cluster.\n\n\neasy_qsub\n\u00a0 -\u00a0Easily submitting PBS jobs with script template. Multiple input files supported.",
+            "title": "Bioinformatics"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#bioinformatics",
+            "text": "Table of Contents   Bioinformatician  Bioinformatics  \u751f\u7269\u4fe1\u606f\u6742\u8c08  Talks  Online courses  Comprehensive packages  General file formats  bam/sam/tabix/bgzf  Fasta/q  GFF/BED/VCF  Others formats  Database API  data structure  Models  Scripts  Visualization  Circos Related  Others    Kmer  Phylogenetic tree  Taxonomy  Assembly  Alignment  Multiple Alignment  Mapping  Bacterial comparative genomics  Metagenomics  16S  Classifier | removing human reads  Virome  Chip-seq  Plastform  PCR  HPC",
+            "title": "Bioinformatics"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#bioinformatician",
+            "text": "What is a bioinformatician  Benjamin Franklin Award for Open Access in the Life Sciences  My Formula as a Bioinformatician  So you want to be a computational biologist? \u00a0\u2606  Bioinformatics is not something you are taught, it\u2019s a way of life  Bioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies  Top N Reasons To Do A Ph.D. or Post-Doc in Bioinformatics/Computational Biology  101 Questions: a new series of interviews with notable bioinformaticians  \u751f\u7269\u4fe1\u606f\u5b66\u5bb6\u7ea7\u522b \u00a0 Levels of Bioinformatics Research  It\u2019s time to reboot bioinformatics education  An Explosion Of Bioinformatics Careers  Is going back to the wet lab worth it?   Social media   Staying Current in Bioinformatics & Genomics: 2017 Edition  Interesting bioinformatics blogs (2017 edition)   Programming skills   An Introduction to Programming for Bioscientists: A Python-Based Primer  You can code, too!",
+            "title": "Bioinformatician"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#bioinformatics_1",
+            "text": "The Phylogeny of Everything, the Origin of Eukaryotes, and the Rules of Taxonomy: Death to Archaea, Bacteria, and Eucarya! Long live Archaebacteria, Eubacteria, Eukaryota, and Prokaryota!  Crossroads (iii) \u2013 a New Direction for Bioinformatics with Twelve Fundamental Problems  Ten Simple Rules for Effective Computational Research \uff08 \u9ad8\u6548\u8ba1\u7b97\u79d1\u5b66\u7814\u7a76\u7684\u5341\u6761\u7b80\u5355\u89c4\u5219 \uff09  Ten Simple Rules for Reproducible Computational Research  Ten Simple Rules for the Care and Feeding of Scientific Data  An Introduction To Applied Bioinformatics  Freedom in bioinformatics  \u4e8c\u4ee3\u6d4b\u5e8f\u6570\u636e\u8fa8\uff08\u4e4b\u4e00\uff09\uff1aClean Data  \u75c5\u539f\u5fae\u751f\u7269\u9ad8\u901a\u91cf\u6d4b\u5e8f\u6570\u636e\u5206\u6790\u7b14\u8bb0  What to do with lots of (sequencing) data  The myths of bioinformatics software  Good Habit for Bioinformatics Analyst or Scientist  What Are The Most Common Stupid Mistakes In Bioinformatics?",
+            "title": "Bioinformatics"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#_1",
+            "text": "\u300a\u5b66\u751f\u7269\u7684\uff0c\u4e0d\u4f1a\u7f16\u7a0b\uff0c\u4e5f\u53ef\u4ee5\u62a5\u8003\u751f\u7269\u4fe1\u606f\u5b66\u7684\u7814\u7a76\u751f\u300b by\u00a0 \u725b\u767b\u79d1 \u3002\uff08\u5b66\u751f\u7269\u7684\uff0c\u4e0d\u4f1a\u7f16\u7a0b\uff0c\u4e5f\u80fd\u5b66\u751f\u7269\u4fe1\u606f\u5b66\u6280\u672f\uff09  \u300a \u9ad8\u901a\u91cf\u6d4b\u5e8f\u80fd\u66ff\u4ee3PCR\u5417\uff1f \u300b\u00a0by  \u97e9\u5efa  \u300a\u751f\u7269\u4fe1\u606f\u5b66\u6570\u636e\u5206\u6790\u4e0e\u7687\u5e1d\u7684\u65b0\u88c5\u300b  \u4e2a\u6027\u5316\u533b\u7597\u4f1a\u5e26\u6765\u66f4\u6602\u8d35\u7684\u836f\u7269\uff1f  \u9ad8\u901a\u91cf\u6d4b\u5e8f\u516c\u53f8\u9760\u4ec0\u4e48\u8d5a\u94b1\uff1f  \u751f\u7269\u4e0d\u9000\u5b66\u6307\u5357\uff1a\u6559\u4f60\u5982\u4f55\u9760\u751f\u7269\u517b\u5bb6\u7cca\u53e3 \u00a0\uff08\u60f3\u8fdb\u5165\u751f\u7269\u5b66\u9886\u57df\u7684\u8bf7\u770b\uff09",
+            "title": "\u751f\u7269\u4fe1\u606f\u6742\u8c08"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#talks",
+            "text": "How NGS is transforming medicine",
+            "title": "Talks"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#online-courses",
+            "text": "Rosalind \u00a0(Rosalind is a platform for learning bioinformatics through problem solving)  Teaching Materials of Langmead-lab",
+            "title": "Online courses"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#comprehensive-packages",
+            "text": "[python]  Biopython  [golang]  Biogo  [golang]  bio  - A simple but high-performance bioinformatics package in Go",
+            "title": "Comprehensive packages"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#general-file-formats",
+            "text": "zindex  -\u00a0Create an index on a compressed text file  tabix \u00a0 - table file index  wormtable \u00a0-\u00a0Write-once-read-many table for large datasets.",
+            "title": "General file formats"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#bamsamtabixbgzf",
+            "text": "[python]\u00a0 hts-python \u00a0-\u00a0pythonic wrapper for libhts  [python]  htseq  - HTSeq is a Python library to facilitate processing and analysis of data from high-throughput sequencing (HTS) experiments.  http://www-huber.embl.de/users/anders/HTSeq/  [golang]\u00a0 biogo/hts  bamtools  -\u00a0C++ API & command-line toolkit for working with BAM data  samblaster \u00a0- \u00a0a tool to mark duplicates and extract discordant and split reads from sam files.  [python]  pysamstats  - A fast Python and command-line utility for extracting simple statistics against genome positions based on sequence alignments from a SAM or BAM file.  [python]\u00a0 pysam  -\u00a0a python module for reading and manipulating Samfiles. It's a lightweight wrapper of the samtools C-API. Pysam also includes an interface for tabix. Another sam parser:\u00a0 simplesam  grabix  - a wee tool for random access into BGZF files  [golang]\u00a0\u00a0 bix \u00a0-\u00a0tabix file access with golang using biogo machinery  mergesam  - Automate common sam & bam conversions  SAMstat  - Displaying sequence statistics for next generation sequencing",
+            "title": "bam/sam/tabix/bgzf"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#fastaq",
+            "text": "seqtk \u00a0-\u00a0Toolkit for processing sequences in FASTA/Q formats  seqkit  - A cross-platform and efficient toolkit for FASTA/Q file manipulation  http://bioinf.shenwei.me/seqkit  [python]\u00a0 pyfaidx \u00a0-\u00a0pyfaidx: efficient pythonic random access to fasta subsequences  [golang]  bio  - A lightweight and high-performance bioinformatics package in Go   FASTA index   [golang]\u00a0 faidx  [golang]  bio/seqio/fai",
+            "title": "Fasta/q"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#gffbedvcf",
+            "text": "bedtools2 \u00a0-\u00a0A powerful toolset for genome arithmetic.  BEDOPS  - the fast, highly scalable and easily-parallelizable genome analysis toolkit  [python]\u00a0 gffutils  -\u00a0GFF and GTF file manipulation and interconversion  [python]\u00a0 pybedtools \u00a0-\u00a0Python wrapper for Aaron Quinlan's BEDTools  [golang]\u00a0 irelate \u00a0-\u00a0Streaming relation (overlap, distance, KNN) of (any number of) sorted genomic interval sets. #golang  [golang]\u00a0 vcfgo \u00a0-\u00a0a golang library to read, write and manipulate files in the variant call format.  vcflib  - a simple C++ library for parsing and manipulating VCF files, + many command-line utilities",
+            "title": "GFF/BED/VCF"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#others-formats",
+            "text": "blast_table2xml \u00a0-\u00a0Convert blast m6 format to xml for blast2go  seqmagick  - file format conversion in Biopython in a convenient way",
+            "title": "Others formats"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#database-api",
+            "text": "pyensembl  - Python interface to ensembl reference genome metadata (exons, transcripts, etc...)",
+            "title": "Database API"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#data-structure",
+            "text": "kvector \u00a0-\u00a0kvector is a small utility for converting motifs to kmer vectors to compare motifs of different lengths",
+            "title": "data structure"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#models",
+            "text": "pomegranate  - Graphical models for Python, implemented in Cython for speed.",
+            "title": "Models"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#scripts",
+            "text": "oneliners  - Useful bash one-liners for bioinformatics.  cgat \u00a0-\u00a0CGAT - Computational Genomics Analysis Tools  bcbb \u00a0-\u00a0Incubator for useful bioinformatics code, primarily in Python and R\u00a0 http://bcbio.wordpress.com  jcvi  -\u00a0Python utility libraries on genome assembly, annotation and comparative genomics  picobio \u00a0-\u00a0Miscellaneous Bioinformatics scripts etc mostly in Python  pydna \u00a0-\u00a0Classes and code for representing double stranded DNA and functions for simulating homologous recombination and Gibson assembly.  BioUtils \u00a0-\u00a0Python scripts for miscellaneous bioinformatics stuff.  sesbio \u00a0-\u00a0Bioinformatics scripts for genome analysis  ngsutils \u00a0-\u00a0Tools for next-generation sequencing analysis\u00a0 http://ngsutils.org  ngsTools \u00a0-\u00a0Programs to analyse NGS data for population genetics purposes",
+            "title": "Scripts"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#visualization",
+            "text": "Circleator \u00a0-\u00a0Flexible circular visualization of genome-associated data with BioPerl and SVG.  ComplexHeatmap \u00a0-\u00a0make complex heatmaps as well as self define annotation graphics  dalliance \u00a0-\u00a0Interactive web-based genome browser.  http://www.biodalliance.org/  Question: Which program, tool, or strategy do you use to visualize genomic rearrangements? \u00a0  DNAplotlib  - DNA plotting library for Python",
+            "title": "Visualization"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#circos-related",
+            "text": "Circos : Perl package for circular plots, which are well suited for genomic rearrangements.  J-Circos  is a java application for doing interactive work with circos plots.  ClicO FS : an interactive web-based service of Circos.  rCircos : R package for circular plots. [last update: 2013]  OmicCircos : R package for circular plots for omics data.[last update: 2015-04]",
+            "title": "Circos Related"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#others",
+            "text": "ggbio : R package for visualizing biological data. Has a circular view similar to the previous packages.  D3 chord diagrams \u00a0(javascript) can be used to visualize genomic rearrangements.  See this plot of migration flows  as a similar example.  Genomatix Transcriptome Viewer:\u00a0Gene Fusion analyses  iFUSE:\u00a0integrated fusion gene explorer  FusionAnalyser: a new graphical, event-driven tool for fusion rearrangements discovery  SOAPFuse includes the option to generate figures  Gremlin  Seqeyes : A flash tool for visualizing structural variations.  SVVIZ \u00a0-\u00a0A READ VISUALIZER TO VALIDATE STRUCTURAL VARIANTS",
+            "title": "Others"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#kmer",
+            "text": "khmer  - In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more  http://khmer.readthedocs.org/  Jellyfish",
+            "title": "Kmer"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#phylogenetic-tree",
+            "text": "[R]\u00a0 ggtree  -\u00a0a phylogenetic tree viewer for different types of tree annotations  [python]\u00a0 ETE tools  evolview",
+            "title": "Phylogenetic tree"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#taxonomy",
+            "text": "NCBI_taxonomy_tree  - NCBI taxonomy tree in-memory mapping  taxiphy  - Common repository for scripts to generate trees from taxonomies. Currently includes ITIS, NCBI, and GBIF.  gtaxon  - A fast cross-platform NCBI taxonomy data querying (gi2taxid, taxid2taxon, name2taxid, LCA) tool, with cmd client and REST API server for both local and remote server.   [R]  taxize  - A taxonomic toolbelt for R  http://ropensci.org/tutorials/taxize.html  TaxonKit  - Cross-platform and Efficient NCBI Taxonomy Toolkit  http://bioinf.shenwei.me/taxonkit/",
+            "title": "Taxonomy"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#assembly",
+            "text": "Bandage \u00a0-\u00a0a Bioinformatics Application for Navigating De novo Assembly Graphs Easily  nucleotid.es \u00a0-\u00a0an assembler catalogue",
+            "title": "Assembly"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#alignment",
+            "text": "hpg-aligner \u00a0-\u00a0HPG Aligner is an ultrafast and highly sensitive Next-Generation Sequencing (NGS) mapper which supoprts both DNA and RNA alignment  AliView \u00a0-\u00a0Software for aligning viewing and editing dna/aminoacid sequences, intuitive, fast and lightweight. Download and website:\u00a0 http://www.ormbunkar.se/aliview",
+            "title": "Alignment"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#multiple-alignment",
+            "text": "msa: An R Package for Multiple Sequence Alignment",
+            "title": "Multiple Alignment"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#mapping",
+            "text": "",
+            "title": "Mapping"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#bacterial-comparative-genomics",
+            "text": "TOOLS FOR BACTERIAL COMPARATIVE GENOMICS",
+            "title": "Bacterial comparative genomics"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#metagenomics",
+            "text": "shotmap \u00a0-\u00a0A Shotgun Metagenome Annotation Pipeline  metagenomeSeq \u00a0-\u00a0Statistical analysis for sparse high-throughput sequencing  mmgenome \u00a0-\u00a0Tools for extracting individual genomes from metagneomes  harvest \u00a0-\u00a0suite of core-genome alignment and visualization tools for quickly analyzing thousands of intraspecific microbial genomes.  PhyloSift \u00a0-\u00a0Phylogenetic and taxonomic analysis for genomes and metagenomes  MetaQuery: Annotation and quantitative analysis of genes in the human gut microbiome",
+            "title": "Metagenomics"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#16s",
+            "text": "\u9ad8\u901a\u91cf\u6570\u636e\u5904\u7406\u7684\u4e00\u4e9b\u7ecf\u9a8c\u548c\u5efa\u8bae  How to choose ordination method, such as PCA, CA, PCoA, and NMDS?",
+            "title": "16S"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#classifier-removing-human-reads",
+            "text": "taxonomer.iobio  - Taxonomer is a kmer-based ultrafast metagenomics tool for assigning taxonomy to sequencing reads from both clinical and environmental samples.  BMTagger  - Best Match Tagger for removing human reads from metagenomics datasets  paper , sop  Centrifuge  - Classifier for metagenomic sequences",
+            "title": "Classifier | removing human reads"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#virome",
+            "text": "viral-ngs  - Viral genomics analysis pipelines",
+            "title": "Virome"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#chip-seq",
+            "text": "ChIP-seq-analysis",
+            "title": "Chip-seq"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#plastform",
+            "text": "Rabix \u00a0-\u00a0Portable Bioinformatics Pipelines  bioboxes  -\u00a0Standards for Interchangeable Bioinformatics Containers  Anvi\u2019o  is an analysis and visualization platform for \u2018omics data.  introduction",
+            "title": "Plastform"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#pcr",
+            "text": "find_differential_primers \u00a0-\u00a0Scripts to aid the design of differential primers for diagnostic PCR.  Primer3-py  - Primer3-py is a Python-abstracted API for the popular Primer3 library. The intention is to provide a simple and reliable interface for automated oligo analysis and design.",
+            "title": "PCR"
+        },
+        {
+            "location": "/notesmd/programing/bioinformatics/#hpc",
+            "text": "hpcgo \u00a0-\u00a0Helping submit jobs to HPC cluster.  easy_qsub \u00a0 -\u00a0Easily submitting PBS jobs with script template. Multiple input files supported.",
+            "title": "HPC"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/",
+            "text": "MkDocs\u4f7f\u7528\u65b9\u6cd5\n\u00b6\n\n\nFor full documentation visit\n\n\n\n\nmkdocs.org\n  \n\n\nMkDocs \u4e2d\u6587\u6587\u6863\n  \n\n\nGithub markdown \u4e2d\u6587\u6587\u6863\n   \n\n\ncinder\n, \u6a21\u677f,\u8981\u5b89\u88c5\u5305\n\n\n\u4e2d\u6587\u641c\u7d22\u7684\u89e3\u51b3\u529e\u6cd5windows\n\u53ea\u6709\u8fd9\u7bc7\u53ef\u4ee5\uff0c\u52a0\u4e0asearch.py\u7684\u4fee\u6539  \n\n\n\u4e2d\u6587\u641c\u7d22\u7684\u89e3\u51b3\u529e\u6cd5mac\n\n\n\u751f\u6210pdf\u548cepub\n  \n\n\n[markdown\u8bed\u6cd5](\nhttp://equation85.github.io/blog/markdown-examples/\n \n\n\nsublime + markdown \u914d\u7f6e\u63d2\u4ef6\n\n\nmkdocs on mac\n \n\n\n[markdown-material(\nhttps://squidfunk.github.io/mkdocs-material/\n)\n\n\n\n\nMarkdown \u7ea6\u5b9a\n\u00b6\n\n\n\n\n\u94fe\u63a5\u5747\u4f7f\u7528\ntext\n\u7684\u683c\u5f0f\uff0c\u5df2\u7ffb\u8bd1\u7684\u6587\u6863\u4f7f\u7528\ntext\uff08zh\uff09\n\u5f62\u5f0f\uff0c\u672a\u7ffb\u8bd1\u7684\u6587\u6863\u4f7f\u7528\ntext\uff08en\uff09\n\u5f62\u5f0f\u3002\n\n\n\u539f\u6587\u7684\u7c97\u4f53\u3001\u4ee3\u7801\u3001\u659c\u4f53\u7b49 style \u5747\u9700\u5728 Markdown \u4e2d\u4f53\u73b0\u3002\n\n\n\u539f\u6587\u7684\u7b14\u8bb0\u90e8\u5206\u5728 Markdown \u4e2d\u4f53\u73b0\u4e3a\u5f15\u7528\u3002\n\n\nh1 - h6\uff08\u4e5f\u5373 md \u4e2d\u7684\u591a\u4e2a # \u7b26\u53f7\uff09\u524d\u540e\u65e0\u9700\u6dfb\u52a0\u6c34\u5e73\u7ebf\uff08\u5373 md \u4e2d\u7684---\uff09\u3002\n\n\n\u7528\u4e8e\u6bb5\u843d\u6807\u9898\u4e00\u4e2a\u6216\u591a\u4e2a\u8fde\u7eed\u7684 # \u540e\u9762\u5e94\u8be5\u6709\u4e00\u4e2a\u7a7a\u683c\u3002\n\n\n\u4ee3\u7801\u5757\u4e0e\u4e0a\u4e0b\u6587\u4e4b\u95f4\u8981\u7a7a\u4e14\u53ea\u4e00\u884c\uff0c\u5e76\u4f7f\u7528\u6b63\u786e\u7684\u4ee3\u7801\u7c7b\u578b\u6807\u6ce8\u3002\n\n\n\u4e0d\u8981\u5927\u91cf\u4f7f\u7528\u65e0\u610f\u4e49\u7684\u7a7a\u884c\u3002\n\n\n\u539f\u6587\u6587\u6863\u4e2d\u7684\u56fe\u7247\u50a8\u5b58\u5728docs/img/\u76ee\u5f55\u4e0b\uff0c\u5f15\u7528\u91c7\u7528\n\u7684\u5f62\u5f0f\u3002\u5176\u4e2d text \u9700\u8981\u8ba4\u771f\u586b\u5199\uff0c\u53ef\u4f7f\u7528\u539f\u6587\u6863\u4e2d\u7684\u63d0\u793a\u3002\n\n\n\n\ninstall\n\u00b6\n\n\n# \u5148\u5b89\u88c5\u597dpython3\u548cpip3\n\npip install mkdocs \n# 1. \u5b89\u88c5MkDocs\u5305\n\npip install mkdocs-cinder \n# 2. \u5b89\u88c5Cinder\u4e3b\u9898\n\nmkdocs new Knowledge_of_bioinfoers_with_MkDocs \n# 3. \u65b0\u5efa\u4e00\u4e2a\u9879\u76ee\n\n\ncd\n Knowledge_of_bioinfoers_with_MkDocs \n# 4. \u8fdb\u5165\u76ee\u5f55\n\nmkdocs serve -a \n0\n.0.0.0:8000 \n# 5. \u542f\u52a8\u670d\u52a1\n\nscp -r js bioinfo@192.168.31.89:/home/bioinfo/.local/lib/python3.5/site-packages/mkdocs/assets/search/mkdocs \n# 6. \u590d\u5236\u4e2d\u6587\u641c\u7d22js\n\n\n\n\n\nCommands\n\u00b6\n\n\n\u5728windows\u4e0a\u7684\u9879\u76ee\u76f4\u63a5\u590d\u5236\u5230linux\u4e0a\u542f\u52a8\u4f1a\u6709\u95ee\u9898\uff0c\u5148\u5728linux\u4e0a\u521b\u5efa\u76ee\u5f55\uff0c\u7136\u540e\u628a\u6587\u4ef6\u590d\u5236\u8fc7\u53bb\n* \nmkdocs new [dir-name]\n - Create a new project.\n* \nmkdocs serve\n - Start the live-reloading docs server.\n* \nmkdocs build\n - Build the documentation site.\n* \nmkdocs help\n - Print this help message.\n\n\nmkdocs\u628amd\u6587\u4ef6\u8f6c\u6362\u6210html\u6587\u4ef6,\u653e\u5728\u4e34\u65f6\u76ee\u5f55\n\u00b6\n\n\n\n\nwindows \u52a0\u8f7d\u4e86\u89c6\u9891\u4e4b\u540emkdocs\u7528\u8d77\u6765\u975e\u5e38\u5361\n    \u539f\u56e0\u662fC\u76d8\u88ab\u5360\u6ee1\u4e86\uff0c\u53ef\u4ee5\u7528\u91d1\u5c71\u6bd2\u9738\u5783\u573e\u6e05\u7406\u68c0\u6d4b\u51fa\u6765\uff0c\u539f\u56e0\u53ef\u80fd\u662f\u6253\u5f00\u4e86\u591a\u4e2amkdocs serve\u4f1a\u521b\u5efa\u65b0\u7684\u4e34\u65f6\u6587\u4ef6\n    \u67e5\u770b\u5730\u5740\uff1aC:\\Users\\ZHANGXUAN\\AppData\\Local\\Temp\\tmp173qgsbl\\uploads\\twang_lecture\\wangting_lecture_vedio\n\n\nmac\u4e0a\u751f\u6210\u7684\u4f4d\u7f6e\u53c8\u5728\u54ea\u5462?(\u601d\u8def:\u770b\u770bpython tempfile\u751f\u6210\u6587\u4ef6\u5939\u76ee\u5f55\u5728\u54ea) /var/folders/0r/wnxd3fn53t19w_sjc8d9m1500000gn/T\n\n\nlinux\u4e0a\u751f\u6210\u7684\u4f4d\u7f6e\u5728/tmp\u76ee\u5f55\u4e0b\n\n\n\n\n\u7ec8\u7aef\u91cc\u8f93\u5165MKDOCS BUILD\uff0c\u751f\u6210\u6587\u6863\u7ad9\u70b9\uff1a\n\u00b6\n\n\nmkdocs build\n\n\u751f\u6210\u5b8c\u7684\u7ad9\u70b9\u5305\u62ec\u5b8c\u6574\u7684css,js,fonts,html\u7b49\u6587\u4ef6/\u76ee\u5f55\u3002\n\n\n\u90e8\u7f72\u6587\u6863\u7ad9\u70b9\uff1a\n\u00b6\n\n\ngit\n\n\n\u89e3\u51b3\u4e2d\u6587\u641c\u7d22\u95ee\u9898\n\u00b6\n\n\nMac\n\u00b6\n\n\n\u7531\u4e8emkdocs\u751f\u6210json\u6587\u4ef6\u65f6\u5c06\u6c49\u5b57\u8f6c\u6210\u4e86ascii\u7801\u5b57\u7b26\uff0c\u4e14mkdocs\u4f7f\u7528\u7684\u641c\u7d22\u63d2\u4ef6lunr.js\u672c\u8eab\u4e0d\u652f\u6301\u4e2d\u6587\uff0c\u56e0\u6b64\u89e3\u51b3\u4e2d\u6587\u641c\u7d22\u95ee\u9898\u5c31\u662f\u8981\u89e3\u51b3\u8fd9\u4e24\u4e2a\u95ee\u9898\u3002\n\n\n1\n. \u6253\u5f00FINDER\uff0c\u4f7f\u7528\u5feb\u6377\u952eCOMMAND+SHIFT+G\uff0c\u8f93\u5165\u4ee5\u4e0b\u8def\u5f84\uff0c\u8fdb\u5165MKDOCS\u7684\u76ee\u5f55\uff1a\n\n/Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages\n\n\n2\n. \u7528\u4ee3\u7801\u7f16\u8f91\u5668\u6253\u5f00SEARCH.PY\u6587\u4ef6\uff0c\u641c\u7d22GENERATE_SEARCH_INDEX\uff0c\u4fee\u6539\u540e\u7684\u5982\u4e0b\uff1a\n\n\nreturn\n json.dumps\n(\npage_dicts, \nsort_keys\n=\nTrue, \nensure_ascii\n=\nFalse, \nindent\n=\n4\n)\n\n\n\u6dfb\u52a0\u4e86ensure_ascii\n=\nFalse,\n\n\n3\n. \u4fdd\u5b58\u6587\u4ef6\uff0c\u5982\u679c\u6743\u9650\u95ee\u9898\u65e0\u6cd5\u4fdd\u5b58\uff0c\u5c31\u53e6\u5b58\u5230\u5176\u4ed6\u76ee\u5f55\u4e0b\uff0c\u518d\u62f7\u8d1d\u8986\u76d6MKDOCS\u76ee\u5f55\u4e0b\u7684SEARCH.PY\u6587\u4ef6\uff1b\n\n\n4\n. \u6253\u5f00GITHUB\u7ad9\u70b9 HTTPS://GITHUB.COM/CODEPIANO/LUNR.JS \u4e0b\u8f7d\u6216\u514b\u9686\u8be5\u4fee\u6539\u7248\u7684LUNR.JS\u9879\u76ee\u5230\u672c\u5730\uff1b\n\ncd\n /Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages/mkdocs/assets/search/mkdocs/js\ngit clone https://github.com/codepiano/lunr.js.git\n\n\n5\n. \u5c06\u4e0b\u8f7d\u6216\u514b\u9686\u5230\u672c\u5730\u7684LUNR.JS\u9879\u76ee\u91cc\u7684LUNR.MIN.JS\u6587\u4ef6\uff0c\u62f7\u8d1d\u8986\u76d6\u5230\u4ee5\u4e0b\u76ee\u5f55\u91cc\u7684\u540c\u540d\u6587\u4ef6\uff1a\n\n\u6b64\u76ee\u5f55\u4ecd\u7136\u4e3amkdocs\u5de5\u5177\u7684\u76ee\u5f55\uff0c\u8986\u76d6\u5b98\u65b9\u5de5\u5177\u91cc\u7684\u540c\u540d\u6587\u4ef6\uff0c\u4ee5\u540e\u6bcf\u6b21\u751f\u6210\u7ad9\u70b9\u5c31\u76f4\u63a5\u597d\u7528\u4e86\uff0c\u4e5f\u53ef\u4ee5\u5148\u5907\u4efd\u5b98\u65b9\u4f7f\u7528\u7684lunr.min.js\u6587\u4ef6\u518d\u8986\u76d6\u5b83\nmv lunr.min.js lunr.min.js.bak\ncp lunr.js/lunr.min.js ./\n\n\u8fd9\u79cd\u65b9\u6cd5\u4e0d\u5f97\u884c, \u9700\u8981\u628a\u5df2\u7ecf\u5f04\u597d\u7684\u4e2d\u6587\u641c\u7d22\u6bd4\u5982\u628a/Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages/mkdocs/assets/search/mkdocs/js\u4e0b\u7684\u6240\u6709\u6587\u4ef6\u590d\u5236\u8fc7\u6765\n\n\n6\n. \u8fdb\u5165\u6587\u6863\u7684\u76ee\u5f55\uff0c\u4f7f\u7528MKDOCS BUILD\u91cd\u65b0\u751f\u6210\u7ad9\u70b9\uff1b\n\n\n7\n. \u67e5\u770b\u751f\u6210\u597d\u7684\u6587\u6863\u76ee\u5f55\u4e0bMKDOCS/SEARCH_INDEX.JSON\u6587\u4ef6\uff0c\u786e\u8ba4\u91cc\u9762\u7684\u4e2d\u6587\u53ef\u4ee5\u6b63\u5e38\u663e\u793a\uff0c\u975eASCII\u7801\u5b57\u7b26\uff0c\u8bf4\u660e\u4fee\u6539\u5b98\u65b9\u6587\u4ef6\u6210\u529f\uff1b\n\n\n8\n. \u5c06\u751f\u6210\u597d\u7684\u6587\u6863\u7ad9\u70b9\u4e0a\u4f20\u66f4\u65b0\u540e\uff0c\u6e05\u9664\u6d4f\u89c8\u5668\u7f13\u5b58\uff0c\u8f93\u5165\u4e2d\u6587\u8fdb\u884c\u641c\u7d22\uff0c\u51fa\u6765\u7ed3\u679c\u5373\u8868\u793a\u6210\u529f\n\n\n\n\nProject layout\n\u00b6\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\n\n\n\n\nbioinformatics: \u751f\u7269\u4fe1\u606f\u5b66\u76f8\u5173\u7684md\u6587\u6863\uff0c\u5305\u62ecscripts\u548ctools\n\n\nimg: \u5b58\u653e\u56fe\u7247\n\n\nscripts: \u5b58\u653epython\u548cperl\u7b49\u811a\u672c\n\n\ntesting_data: \u6d4b\u8bd5\u6570\u636e\n\n\nuploads: \u5b58\u653e\u4e00\u4e9b\u5b66\u4e60\u8d44\u6599\u548c\u6587\u6863\n\n\n\n\n\n\n\n\n\u6574\u7406\u597d\u4e86\u7528\u8fc7\u7684\u5de5\u5177, \u4ee5\u540e\u5e72\u8d77\u6765\u66f4\u5feb\u66f4\u65b9\u4fbf, \u4e0b\u9762\u662f\u505a\u8fc7\u4e00\u4e2a\u4e8b\u60c5\u540e\u6574\u7406\u7684\u6587\u6863\n\n\n\n\n\n\n\n\n\u65b0\u589e\u52a0\u7684\u9875\u9762\u8bbe\u7f6eurl\n\n\n\n\n\n\nMarkdown \u8bed\u6cd5\n\u00b6\n\n\n\u5206\u9694\u7ebf\n\u00b6\n\n\n\n\n\u6807\u98981,2,3...\n\u00b6\n\n\nhead1 #\n\nhead2 ##\n\n\n\u5217\u8868\uff0c\u6709\u5e8f\n\u00b6\n\n\n\n\nRed\n\n\nBlue\n\n\nGreen\n\n\ngray\n\n\n\n\n\u5217\u8868\uff0c\u65e0\u5e8f\n\u00b6\n\n\n\n\nabstract\n\n\nintroduction\n\n\nresult\n\n\n\n\n\u533a\u5757\u5f15\u7528\n\u00b6\n\n\n\n\nThis is the first level of quoting.\n\n\n\n\nThis is nested blockquote.\n\n\n\n\nBack to the first level.\n\n\n\n\nTask Lists\n\u00b6\n\n\n\n\n @mentions, #refs, \nlinks\n, \nformatting\n, and \ntags\n supported\n\n\n[\u221a] list syntax required (any unordered or ordered list supported)\n\n\n this is a complete item\n\n\n this is an incomplete item\n\n\n\n\n\u7f29\u8fdb\n\u00b6\n\n\n\n\n\n\nThis is a list item with two paragraphs.\n\n\nThis is the second paragraph in the list item. You're\nonly required to indent the first line. Lorem ipsum dolor\nsit amet, consectetuer adipiscing elit.\n\n\n\n\n\n\nAnother item in the same list.\n\n\n\n\n\n\n\u5f3a\u8c03\n\u00b6\n\n\n\u4e24\u4e2a\u661f\u53f7\n\n\n\u63d2\u5165\u56fe\u7247\n\u00b6\n\n\n\u897f\u90e8\u4e16\u754c\u597d\u70e7\u8111\uff01\n\n\n\n\n\u659c\u4f53\n\n\n\u4ee3\u7801\u5757\n\u00b6\n\n\n\u4ee5\u4e09\u4e2a\u4ee5\u4e0a \n\uff08\u53cd\u5f15\u53f7\uff09\u5f00\u59cb\u4e00\u884c, \u5e76\u5728\u7ed3\u675f\u4f4d\u7f6e\u4ee5\u76f8\u540c\u6570\u76ee\u7684\u53cd\u5f15\u53f7\n \uff08\u53cd\u5f15\u53f7\uff09\u5f00\u59cb\u4e00\u884c\u5373\u53ef\u5305\u542b\u4e00\u4e2a\u4ee3\u7801\u5757:\n\n\nFenced code blocks are like Stardard\nMarkdown regular code blocks, except that\ntheye not indented and instead rely on a\nstart and end fence lines to delimit the code\nblock.\n\n\n\n\n\u8868\u683c\n\u00b6\n\n\n\n\n\n\n\n\nFirst Header\n\n\nSecond Header\n\n\nThird Header\n\n\n\n\n\n\n\n\n\n\nContent Cell\n\n\nContent Cell\n\n\nContent Cell\n\n\n\n\n\n\nContent Cell\n\n\nContent Cell\n\n\nContent Cell\n\n\n\n\n\n\n\n\n\u00a9zhangxuan 2017 \nzhangxuan@xtbg.ac.cn\n \u81ea\u52a8\u521b\u5efa\u8fde\u63a5\n\n\nKindle\n\u00b6\n\n\n\n\nfree ebook\n\n\nSamshwords\n\n\n\n\n\u53c2\u8003\u5f0f\u7684\u94fe\u63a5\n\u00b6\n\n\nThis is \nGoogle\n reference-style link.",
+            "title": "MkDocs"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#mkdocs",
+            "text": "For full documentation visit   mkdocs.org     MkDocs \u4e2d\u6587\u6587\u6863     Github markdown \u4e2d\u6587\u6587\u6863      cinder , \u6a21\u677f,\u8981\u5b89\u88c5\u5305  \u4e2d\u6587\u641c\u7d22\u7684\u89e3\u51b3\u529e\u6cd5windows \u53ea\u6709\u8fd9\u7bc7\u53ef\u4ee5\uff0c\u52a0\u4e0asearch.py\u7684\u4fee\u6539    \u4e2d\u6587\u641c\u7d22\u7684\u89e3\u51b3\u529e\u6cd5mac  \u751f\u6210pdf\u548cepub     [markdown\u8bed\u6cd5]( http://equation85.github.io/blog/markdown-examples/    sublime + markdown \u914d\u7f6e\u63d2\u4ef6  mkdocs on mac    [markdown-material( https://squidfunk.github.io/mkdocs-material/ )",
+            "title": "MkDocs\u4f7f\u7528\u65b9\u6cd5"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#markdown",
+            "text": "\u94fe\u63a5\u5747\u4f7f\u7528 text \u7684\u683c\u5f0f\uff0c\u5df2\u7ffb\u8bd1\u7684\u6587\u6863\u4f7f\u7528 text\uff08zh\uff09 \u5f62\u5f0f\uff0c\u672a\u7ffb\u8bd1\u7684\u6587\u6863\u4f7f\u7528 text\uff08en\uff09 \u5f62\u5f0f\u3002  \u539f\u6587\u7684\u7c97\u4f53\u3001\u4ee3\u7801\u3001\u659c\u4f53\u7b49 style \u5747\u9700\u5728 Markdown \u4e2d\u4f53\u73b0\u3002  \u539f\u6587\u7684\u7b14\u8bb0\u90e8\u5206\u5728 Markdown \u4e2d\u4f53\u73b0\u4e3a\u5f15\u7528\u3002  h1 - h6\uff08\u4e5f\u5373 md \u4e2d\u7684\u591a\u4e2a # \u7b26\u53f7\uff09\u524d\u540e\u65e0\u9700\u6dfb\u52a0\u6c34\u5e73\u7ebf\uff08\u5373 md \u4e2d\u7684---\uff09\u3002  \u7528\u4e8e\u6bb5\u843d\u6807\u9898\u4e00\u4e2a\u6216\u591a\u4e2a\u8fde\u7eed\u7684 # \u540e\u9762\u5e94\u8be5\u6709\u4e00\u4e2a\u7a7a\u683c\u3002  \u4ee3\u7801\u5757\u4e0e\u4e0a\u4e0b\u6587\u4e4b\u95f4\u8981\u7a7a\u4e14\u53ea\u4e00\u884c\uff0c\u5e76\u4f7f\u7528\u6b63\u786e\u7684\u4ee3\u7801\u7c7b\u578b\u6807\u6ce8\u3002  \u4e0d\u8981\u5927\u91cf\u4f7f\u7528\u65e0\u610f\u4e49\u7684\u7a7a\u884c\u3002  \u539f\u6587\u6587\u6863\u4e2d\u7684\u56fe\u7247\u50a8\u5b58\u5728docs/img/\u76ee\u5f55\u4e0b\uff0c\u5f15\u7528\u91c7\u7528 \u7684\u5f62\u5f0f\u3002\u5176\u4e2d text \u9700\u8981\u8ba4\u771f\u586b\u5199\uff0c\u53ef\u4f7f\u7528\u539f\u6587\u6863\u4e2d\u7684\u63d0\u793a\u3002",
+            "title": "Markdown \u7ea6\u5b9a"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#install",
+            "text": "# \u5148\u5b89\u88c5\u597dpython3\u548cpip3 \npip install mkdocs  # 1. \u5b89\u88c5MkDocs\u5305 \npip install mkdocs-cinder  # 2. \u5b89\u88c5Cinder\u4e3b\u9898 \nmkdocs new Knowledge_of_bioinfoers_with_MkDocs  # 3. \u65b0\u5efa\u4e00\u4e2a\u9879\u76ee  cd  Knowledge_of_bioinfoers_with_MkDocs  # 4. \u8fdb\u5165\u76ee\u5f55 \nmkdocs serve -a  0 .0.0.0:8000  # 5. \u542f\u52a8\u670d\u52a1 \nscp -r js bioinfo@192.168.31.89:/home/bioinfo/.local/lib/python3.5/site-packages/mkdocs/assets/search/mkdocs  # 6. \u590d\u5236\u4e2d\u6587\u641c\u7d22js",
+            "title": "install"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#commands",
+            "text": "\u5728windows\u4e0a\u7684\u9879\u76ee\u76f4\u63a5\u590d\u5236\u5230linux\u4e0a\u542f\u52a8\u4f1a\u6709\u95ee\u9898\uff0c\u5148\u5728linux\u4e0a\u521b\u5efa\u76ee\u5f55\uff0c\u7136\u540e\u628a\u6587\u4ef6\u590d\u5236\u8fc7\u53bb\n*  mkdocs new [dir-name]  - Create a new project.\n*  mkdocs serve  - Start the live-reloading docs server.\n*  mkdocs build  - Build the documentation site.\n*  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#mkdocsmdhtml",
+            "text": "windows \u52a0\u8f7d\u4e86\u89c6\u9891\u4e4b\u540emkdocs\u7528\u8d77\u6765\u975e\u5e38\u5361\n    \u539f\u56e0\u662fC\u76d8\u88ab\u5360\u6ee1\u4e86\uff0c\u53ef\u4ee5\u7528\u91d1\u5c71\u6bd2\u9738\u5783\u573e\u6e05\u7406\u68c0\u6d4b\u51fa\u6765\uff0c\u539f\u56e0\u53ef\u80fd\u662f\u6253\u5f00\u4e86\u591a\u4e2amkdocs serve\u4f1a\u521b\u5efa\u65b0\u7684\u4e34\u65f6\u6587\u4ef6\n    \u67e5\u770b\u5730\u5740\uff1aC:\\Users\\ZHANGXUAN\\AppData\\Local\\Temp\\tmp173qgsbl\\uploads\\twang_lecture\\wangting_lecture_vedio  mac\u4e0a\u751f\u6210\u7684\u4f4d\u7f6e\u53c8\u5728\u54ea\u5462?(\u601d\u8def:\u770b\u770bpython tempfile\u751f\u6210\u6587\u4ef6\u5939\u76ee\u5f55\u5728\u54ea) /var/folders/0r/wnxd3fn53t19w_sjc8d9m1500000gn/T  linux\u4e0a\u751f\u6210\u7684\u4f4d\u7f6e\u5728/tmp\u76ee\u5f55\u4e0b",
+            "title": "mkdocs\u628amd\u6587\u4ef6\u8f6c\u6362\u6210html\u6587\u4ef6,\u653e\u5728\u4e34\u65f6\u76ee\u5f55"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#mkdocs-build",
+            "text": "mkdocs build \n\u751f\u6210\u5b8c\u7684\u7ad9\u70b9\u5305\u62ec\u5b8c\u6574\u7684css,js,fonts,html\u7b49\u6587\u4ef6/\u76ee\u5f55\u3002",
+            "title": "\u7ec8\u7aef\u91cc\u8f93\u5165MKDOCS BUILD\uff0c\u751f\u6210\u6587\u6863\u7ad9\u70b9\uff1a"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_1",
+            "text": "git",
+            "title": "\u90e8\u7f72\u6587\u6863\u7ad9\u70b9\uff1a"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_2",
+            "text": "",
+            "title": "\u89e3\u51b3\u4e2d\u6587\u641c\u7d22\u95ee\u9898"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#mac",
+            "text": "\u7531\u4e8emkdocs\u751f\u6210json\u6587\u4ef6\u65f6\u5c06\u6c49\u5b57\u8f6c\u6210\u4e86ascii\u7801\u5b57\u7b26\uff0c\u4e14mkdocs\u4f7f\u7528\u7684\u641c\u7d22\u63d2\u4ef6lunr.js\u672c\u8eab\u4e0d\u652f\u6301\u4e2d\u6587\uff0c\u56e0\u6b64\u89e3\u51b3\u4e2d\u6587\u641c\u7d22\u95ee\u9898\u5c31\u662f\u8981\u89e3\u51b3\u8fd9\u4e24\u4e2a\u95ee\u9898\u3002 1 . \u6253\u5f00FINDER\uff0c\u4f7f\u7528\u5feb\u6377\u952eCOMMAND+SHIFT+G\uff0c\u8f93\u5165\u4ee5\u4e0b\u8def\u5f84\uff0c\u8fdb\u5165MKDOCS\u7684\u76ee\u5f55\uff1a\n\n/Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages 2 . \u7528\u4ee3\u7801\u7f16\u8f91\u5668\u6253\u5f00SEARCH.PY\u6587\u4ef6\uff0c\u641c\u7d22GENERATE_SEARCH_INDEX\uff0c\u4fee\u6539\u540e\u7684\u5982\u4e0b\uff1a return  json.dumps ( page_dicts,  sort_keys = True,  ensure_ascii = False,  indent = 4 )  \u6dfb\u52a0\u4e86ensure_ascii = False, 3 . \u4fdd\u5b58\u6587\u4ef6\uff0c\u5982\u679c\u6743\u9650\u95ee\u9898\u65e0\u6cd5\u4fdd\u5b58\uff0c\u5c31\u53e6\u5b58\u5230\u5176\u4ed6\u76ee\u5f55\u4e0b\uff0c\u518d\u62f7\u8d1d\u8986\u76d6MKDOCS\u76ee\u5f55\u4e0b\u7684SEARCH.PY\u6587\u4ef6\uff1b 4 . \u6253\u5f00GITHUB\u7ad9\u70b9 HTTPS://GITHUB.COM/CODEPIANO/LUNR.JS \u4e0b\u8f7d\u6216\u514b\u9686\u8be5\u4fee\u6539\u7248\u7684LUNR.JS\u9879\u76ee\u5230\u672c\u5730\uff1b cd  /Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages/mkdocs/assets/search/mkdocs/js\ngit clone https://github.com/codepiano/lunr.js.git 5 . \u5c06\u4e0b\u8f7d\u6216\u514b\u9686\u5230\u672c\u5730\u7684LUNR.JS\u9879\u76ee\u91cc\u7684LUNR.MIN.JS\u6587\u4ef6\uff0c\u62f7\u8d1d\u8986\u76d6\u5230\u4ee5\u4e0b\u76ee\u5f55\u91cc\u7684\u540c\u540d\u6587\u4ef6\uff1a\n\n\u6b64\u76ee\u5f55\u4ecd\u7136\u4e3amkdocs\u5de5\u5177\u7684\u76ee\u5f55\uff0c\u8986\u76d6\u5b98\u65b9\u5de5\u5177\u91cc\u7684\u540c\u540d\u6587\u4ef6\uff0c\u4ee5\u540e\u6bcf\u6b21\u751f\u6210\u7ad9\u70b9\u5c31\u76f4\u63a5\u597d\u7528\u4e86\uff0c\u4e5f\u53ef\u4ee5\u5148\u5907\u4efd\u5b98\u65b9\u4f7f\u7528\u7684lunr.min.js\u6587\u4ef6\u518d\u8986\u76d6\u5b83\nmv lunr.min.js lunr.min.js.bak\ncp lunr.js/lunr.min.js ./\n\n\u8fd9\u79cd\u65b9\u6cd5\u4e0d\u5f97\u884c, \u9700\u8981\u628a\u5df2\u7ecf\u5f04\u597d\u7684\u4e2d\u6587\u641c\u7d22\u6bd4\u5982\u628a/Users/zhangxuan/work/apps/anaconda3/lib/python3.6/site-packages/mkdocs/assets/search/mkdocs/js\u4e0b\u7684\u6240\u6709\u6587\u4ef6\u590d\u5236\u8fc7\u6765 6 . \u8fdb\u5165\u6587\u6863\u7684\u76ee\u5f55\uff0c\u4f7f\u7528MKDOCS BUILD\u91cd\u65b0\u751f\u6210\u7ad9\u70b9\uff1b 7 . \u67e5\u770b\u751f\u6210\u597d\u7684\u6587\u6863\u76ee\u5f55\u4e0bMKDOCS/SEARCH_INDEX.JSON\u6587\u4ef6\uff0c\u786e\u8ba4\u91cc\u9762\u7684\u4e2d\u6587\u53ef\u4ee5\u6b63\u5e38\u663e\u793a\uff0c\u975eASCII\u7801\u5b57\u7b26\uff0c\u8bf4\u660e\u4fee\u6539\u5b98\u65b9\u6587\u4ef6\u6210\u529f\uff1b 8 . \u5c06\u751f\u6210\u597d\u7684\u6587\u6863\u7ad9\u70b9\u4e0a\u4f20\u66f4\u65b0\u540e\uff0c\u6e05\u9664\u6d4f\u89c8\u5668\u7f13\u5b58\uff0c\u8f93\u5165\u4e2d\u6587\u8fdb\u884c\u641c\u7d22\uff0c\u51fa\u6765\u7ed3\u679c\u5373\u8868\u793a\u6210\u529f",
+            "title": "Mac"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.   bioinformatics: \u751f\u7269\u4fe1\u606f\u5b66\u76f8\u5173\u7684md\u6587\u6863\uff0c\u5305\u62ecscripts\u548ctools  img: \u5b58\u653e\u56fe\u7247  scripts: \u5b58\u653epython\u548cperl\u7b49\u811a\u672c  testing_data: \u6d4b\u8bd5\u6570\u636e  uploads: \u5b58\u653e\u4e00\u4e9b\u5b66\u4e60\u8d44\u6599\u548c\u6587\u6863     \u6574\u7406\u597d\u4e86\u7528\u8fc7\u7684\u5de5\u5177, \u4ee5\u540e\u5e72\u8d77\u6765\u66f4\u5feb\u66f4\u65b9\u4fbf, \u4e0b\u9762\u662f\u505a\u8fc7\u4e00\u4e2a\u4e8b\u60c5\u540e\u6574\u7406\u7684\u6587\u6863     \u65b0\u589e\u52a0\u7684\u9875\u9762\u8bbe\u7f6eurl",
+            "title": "Project layout"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#markdown_1",
+            "text": "",
+            "title": "Markdown \u8bed\u6cd5"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_3",
+            "text": "",
+            "title": "\u5206\u9694\u7ebf"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#123",
+            "text": "head1 # \nhead2 ##",
+            "title": "\u6807\u98981,2,3..."
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_4",
+            "text": "Red  Blue  Green  gray",
+            "title": "\u5217\u8868\uff0c\u6709\u5e8f"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_5",
+            "text": "abstract  introduction  result",
+            "title": "\u5217\u8868\uff0c\u65e0\u5e8f"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_6",
+            "text": "This is the first level of quoting.   This is nested blockquote.   Back to the first level.",
+            "title": "\u533a\u5757\u5f15\u7528"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#task-lists",
+            "text": "@mentions, #refs,  links ,  formatting , and  tags  supported  [\u221a] list syntax required (any unordered or ordered list supported)   this is a complete item   this is an incomplete item",
+            "title": "Task Lists"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_7",
+            "text": "This is a list item with two paragraphs.  This is the second paragraph in the list item. You're\nonly required to indent the first line. Lorem ipsum dolor\nsit amet, consectetuer adipiscing elit.    Another item in the same list.",
+            "title": "\u7f29\u8fdb"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_8",
+            "text": "\u4e24\u4e2a\u661f\u53f7",
+            "title": "\u5f3a\u8c03"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_9",
+            "text": "\u897f\u90e8\u4e16\u754c\u597d\u70e7\u8111\uff01   \u659c\u4f53",
+            "title": "\u63d2\u5165\u56fe\u7247"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_10",
+            "text": "\u4ee5\u4e09\u4e2a\u4ee5\u4e0a  \uff08\u53cd\u5f15\u53f7\uff09\u5f00\u59cb\u4e00\u884c, \u5e76\u5728\u7ed3\u675f\u4f4d\u7f6e\u4ee5\u76f8\u540c\u6570\u76ee\u7684\u53cd\u5f15\u53f7  \uff08\u53cd\u5f15\u53f7\uff09\u5f00\u59cb\u4e00\u884c\u5373\u53ef\u5305\u542b\u4e00\u4e2a\u4ee3\u7801\u5757:  Fenced code blocks are like Stardard\nMarkdown regular code blocks, except that\ntheye not indented and instead rely on a\nstart and end fence lines to delimit the code\nblock.",
+            "title": "\u4ee3\u7801\u5757"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_11",
+            "text": "First Header  Second Header  Third Header      Content Cell  Content Cell  Content Cell    Content Cell  Content Cell  Content Cell     \u00a9zhangxuan 2017  zhangxuan@xtbg.ac.cn  \u81ea\u52a8\u521b\u5efa\u8fde\u63a5",
+            "title": "\u8868\u683c"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#kindle",
+            "text": "free ebook  Samshwords",
+            "title": "Kindle"
+        },
+        {
+            "location": "/notesmd/programing/mkdocs/#_12",
+            "text": "This is  Google  reference-style link.",
+            "title": "\u53c2\u8003\u5f0f\u7684\u94fe\u63a5"
+        },
+        {
+            "location": "/project/",
+            "text": "What i have done\n\u00b6",
+            "title": "Project on Github"
+        },
+        {
+            "location": "/project/#what-i-have-done",
+            "text": "",
+            "title": "What i have done"
+        },
+        {
+            "location": "/publish/",
+            "text": "",
+            "title": "Publish"
+        },
+        {
+            "location": "/me/",
+            "text": "Who i am?\n\u00b6",
+            "title": "About me"
+        },
+        {
+            "location": "/me/#who-i-am",
+            "text": "",
+            "title": "Who i am?"
+        }
+    ]
+}
