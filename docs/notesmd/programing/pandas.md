@@ -63,3 +63,12 @@ df1=DataFrame({'key':['a','b','b'],'data1':range(3)})
 df2=DataFrame({'key':['a','b','c'],'data2':range(3)})
 pd.merge(df1,df2)   #没有指定连接键，默认用重叠列名，没有指定连接方式
 ```
+
+## pandas缺失值
+缺失值默认是nan，float类型，如果你想判断这个值的话不可能，最好的方式就是：
+```python
+protein_df = pd.read_csv("Census_allFri_Feb_24_085913_2017.tsv", header = 0, index_col = None, sep = '\t')
+
+# 填充缺失值
+protein_df = protein_df.fillna('')
+```

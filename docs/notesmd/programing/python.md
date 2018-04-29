@@ -60,6 +60,12 @@ strlist = str.split(' ')
 tmp_list = ['a', '1', 'b']
 
 tmp_str = ' '.join(tmp_list) # 字符串是一个对象，这里比较想对对象进行操作
+
+# python中字符串自带的split方法一次只能使用一个字符对字符串进行分割，但是python的正则模块则可以实现多个字符分割
+import re
+re.split('[_#|]','this_is#a|test')
+# 返回的是一个列表（list），输出结果如下：
+['this', 'is', 'a', 'test']
 ```
 
 ## 对文件地址的操作os.path
@@ -95,7 +101,7 @@ tmp_str = "这是第一个参数param1 = {}; 这是第二个参数param2 = {}".f
 # put code here
 ```
 
-## 字典（哈希）的使用
+## 字典dict（哈希hash）的使用
 ```python
 # 一维字典
 fasta_sequence = dict() # 定义
@@ -119,6 +125,23 @@ fasta_sequence.setdefault('gene1', {})
 fasta_sequence['gene1']['gene2'] = 'ATGC'
 
 result: {'gene1': {'gene2': 'a'}}
+
+# 字典输出是按key或者value排序python3
+>> dic
+{'a':3 , 'b':2 , 'c': 1}
+>> sorted(dic.items(), key=lambda x:x[0], reverse=True) # 按照第0个元素降序排列
+[('c', 1), ('b', 2), ('a', 3)]
+>> sorted(dic.items(), key=lambda x:x[0], reverse=False) # 按照第0个元素升序排列
+[('a', 3), ('b', 2), ('c', 1)]
+>> sorted(dic.items(), key=lambda x:x[1], reverse=True) # 按照第1个元素降序排列
+[('a', 3), ('b', 2), ('c', 1)]
+>> sorted(dic.items(), key=lambda x:x[1], reverse=False) # 按照第1个元素降序排列
+[('c', 1), ('b', 2), ('a', 3)]
+```
+
+## python有序hash
+```python
+from collect import sortdict
 ```
 
 ## lambda函数的使用
@@ -135,6 +158,23 @@ tmp_list = ['str1', 123]
 
 tmp_str_list = list(map(str, tmp_list))
 
+```
+
+## 高级列表操作
+```python
+import os
+files = os.listdir()
+names = [f.strip() for f in files]
+```
+
+## 统计列表中元素出现的次数
+```python
+from collections import Counter  
+  
+values = ['zhangsan','lisi','lisi','wangwu','wangwu','lisi','zhangsan','zhangsan','zhangsan','zhangsan','mazi','mazi','wangwu','wangwu','mazi', 'lisi','mazi','mazi','mazi', 'wangwu','mazi',]  
+values_counts = Counter(values)  
+top_2 = values_counts.most_common(2)  
+print(top_2)
 ```
 
 ## 各种类型转换
@@ -160,9 +200,15 @@ upper_str = lower_str.upper()
 upper_str = upper_str + "0123456789"
 ```
 
-## try catch
-```
-
+## try except
+```python
+try:
+    value = fasta[key]
+except Keyerror:
+    print('key error!')
+    break
+else:
+    print('key exists!')
 ```
 
 ## json
@@ -263,6 +309,12 @@ pprint.pprint(data1)
 ```python
 import sys
 sys.path
+```
+
+## sys 执行系统或shell命令
+```python
+import sys
+sys.exec()
 ```
 
 ## 查看使用tempfile包, 创建的临时文件在电脑上的位置
