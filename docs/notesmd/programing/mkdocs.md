@@ -14,6 +14,17 @@ For full documentation visit
 - [mkdocs on mac](http://beautycss.net/2017/01/23/use-mkdocs-on-mac/) 
 - [markdown-material(https://squidfunk.github.io/mkdocs-material/)
 
+## Markdown 约定
+- 链接均使用[text](url)的格式，已翻译的文档使用[text（zh）](xxx.md)形式，未翻译的文档使用[text（en）](url)形式。
+- 原文的粗体、代码、斜体等 style 均需在 Markdown 中体现。
+- 原文的笔记部分在 Markdown 中体现为引用。
+- h1 - h6（也即 md 中的多个 # 符号）前后无需添加水平线（即 md 中的---）。
+- 用于段落标题一个或多个连续的 # 后面应该有一个空格。
+- 代码块与上下文之间要空且只一行，并使用正确的代码类型标注。
+- 不要大量使用无意义的空行。
+- 原文文档中的图片储存在docs/img/目录下，引用采用![text](img/xxx.png)的形式。其中 text 需要认真填写，可使用原文档中的提示。
+
+
 ## install
 ```bash
 # 先安装好python3和pip3
