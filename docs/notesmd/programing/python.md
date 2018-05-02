@@ -23,6 +23,12 @@ lines = f.readlines() # 读取文件到一个列表
 f.close() # 关闭文件
 ```
 
+## 列出目录
+```python
+samples = {f[:-11] for f in os.listdir("bam_data") if f.endswith(".sorted.bam")}
+list(samples_old)[0] # 每次结果是随机的
+```
+
 ## 写文件
 ```python
 f = open("write", "w") # 文本模式
@@ -126,7 +132,7 @@ fasta_sequence['gene1']['gene2'] = 'ATGC'
 
 result: {'gene1': {'gene2': 'a'}}
 
-# 字典输出是按key或者value排序python3
+# 字典输出是按key或者value排序python3, 这个sorted只能按照字符排序？怎么按照数值排序？
 >> dic
 {'a':3 , 'b':2 , 'c': 1}
 >> sorted(dic.items(), key=lambda x:x[0], reverse=True) # 按照第0个元素降序排列
